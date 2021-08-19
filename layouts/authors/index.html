@@ -1,0 +1,37 @@
+{{ define "main" }}
+{{ if isset .Params "authorid" }}
+{{ $author := index .Site.Data.authors (string .Params.authorid) }}
+<section>
+    <header id="author-info">
+            <h1>About the Author: {{ $author.name }}</h1>
+            <div id="author-bio">
+                <picture>
+                    <source type="image/webp" srcset="{{ $author.image }}.webp">
+                    <img src="{{ $author.image }}.png" alt="{{ $author.name }}">
+                </picture>
+                <p>{{ $author.bio }}</p>
+            </div>
+    </header>
+    <h2 id="articles-header">Articles From {{ $author.name }}</h2>
+    {{ range where .Site.RegularPages ".Params.author" $author.id }}
+    <article class="blog-entry">
+        <picture class="blog-image">
+            <source type="image/webp" srcset="{{ range .Resources.Match "feature-webp" }}{{ .RelPermalink }}{{ end }}">
+            {{ range .Resources.Match "feature-src" }}<img src="{{ .RelPermalink }}" alt="{{ .Title }}">{{ end }}
+        </picture>
+        <div class="blog-info">
+            <header>
+                <p class="blog-date"><time datetime="{{ .Date.Format "2006-01-02" }}" pubdate="pubdate">{{ .Date.Format "January 2, 2006" }}</time></p>
+                <h2 class="blog-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                {{ $author := index .Site.Data.authors .Params.author }}
+                <p class="blog-author">Written By {{ $author.name }}</p>
+                <ul class="blog-categories">{{ range .Params.categories }}<li><a class="blog-category" href="#">{{ . }}</a></li>{{end}}</ul>
+            </header>
+            <p class="blog-snippet">{{ .Params.snippet }}</p>
+            <a class="blog-read" href="{{ .Permalink }}">Read this post</a>
+        </div>
+    </article>
+    {{ end }}
+</section>
+{{ end }}
+{{ end }}

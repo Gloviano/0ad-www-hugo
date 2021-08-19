@@ -1,0 +1,40 @@
+# Header Strings
+SiteDescription = "Бесплатная, открытая видеоигра о древних войнах"
+
+# Menu Strings
+Home = "Главная"
+Download = "Скачать"
+Download0AD = "Скачать 0 A.D."
+DonateTo0AD = "Пожертвовать в 0 A.D."
+DonateSubtitle = "Поддержка разработки 0 A.D."
+News = "Новости"
+
+GameInfo = "Об игре"
+ProjectOverview = "Обзор проекта"
+Features = "Особенности"
+Factions = "Группировки"
+GameManual = "Инструкция"
+AwardsAcclaim = "Награды"
+
+Media = "Медиа"
+Videos = "Видео"
+Screenshots = "Скриншоты"
+Music = "Музыка"
+BuildingConcepts = "Концепт-арт зданий"
+UnitConcepts = "Концепт-арт юнитов"
+Wallpapers = "Обои"
+
+Community = "Сообщества"
+Donate = "Пожертвовать"
+Participate = "Учавствовать"
+Forums = "Форумы"
+IRCChannel = "IRC чат"
+Support = "Поддержка"
+
+About = "О нас"
+ContactUs = "Контакты"
+Organization = "Организация"
+Contributors = "Участники"
+LegalNotices = "Юридическая инфо"
+OfficialLogos = "Официальные лого"
+Story0AD = "История 0 A.D."

@@ -1,0 +1,46 @@
+baseURL = "https://play0ad.com/"
+languageCode = "en"
+defaultContentLanguage = "en"
+assetDir = "static"
+paginate = 5
+enableRobotsTXT = false
+enableMissingTranslationPlaceholders = false
+disableHugoGeneratorInject = true
+disableLiveReload = false
+
+[params]
+    description = "0 A.D. is a free, open-source, historical Real Time Strategy (RTS) game currently under development by Wildfire Games, a global group of volunteer game developers."
+    gameVersion = "Alpha 25: Yaunā"
+
+[permalinks]
+    pages = "/:slug"
+    posts = "/:slug"
+    categories = "/:title"
+
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+    author = "authors"
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.parser]
+            [markup.goldmark.parser.attribute]
+                block = true
+                title = true
+                
+[languages]
+    [languages.en]
+        languageName = "English"
+        title = "DEV - 0 A.D. | A free, open-source game of ancient warfare"
+        weight = 1
+
+    [languages.ru]
+        languageName = "русский"
+        title = "DEV - 0 A.D. | Бесплатная игра про древнюю войну с открытым исходным кодом"
+        weight = 2
+
+    [languages.es]
+        languageName = "Español"
+        title = "REPLACE ME"
+        weight = 3

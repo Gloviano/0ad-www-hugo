@@ -1,0 +1,26 @@
+{{ $type := "article" }}{{ if .IsHome }}{{ $type = "website" }}{{ end }}
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="{{ $type }}">
+<meta property="og:title" content="{{- $.Param "opengraph.title" | default .Site.Title -}}">
+<meta property="og:description" content="{{- $.Param "opengraph.description" | default .Site.Params.description }}">
+<meta property="og:url" content="{{ .Permalink }}">
+{{ if not .IsHome }}
+<meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.postImageDIR }}{{ $.Param "opengraph.image" }}">
+<meta property="og:image:secure_url" content="{{ .Site.BaseURL }}{{ .Site.Params.postImageDIR }}{{ $.Param "opengraph.image" }}">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ $.Param "opengraph.alt" }}">
+<meta property="og:site_name" content="0ad">
+<meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05Z0700" }}">
+<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z0700" }}">
+<meta property="article:author" content="">
+{{ if isset .Params "categories" }}<meta property="article:section" content="{{ index .Params.categories 0 }}">{{ end }}
+{{ end }}
+<meta property="fb:app_id" content="{{ .Site.Params.fbAppID }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{- $.Param "twitter.title" | default .Site.Title -}}">
+<meta name="twitter:description" content="{{- $.Param "twitter.description" | default .Site.Params.description }}">
+<meta name="twitter:site" content="@play0ad">
+<meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Site.Params.postImageDIR }}{{ $.Param "twitter.image"}}">
+<meta name="twitter:creator" content="@play0ad">

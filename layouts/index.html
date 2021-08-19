@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+<!-- We loop through all English language posts and merge them with the current language to fill in any missing gaps. -->
+{{ $pages := where $.Site.RegularPages "Section" "posts" | lang.Merge (where .Sites.First.RegularPages "Section" "posts") }}
+{{ range $pages }}
+<article class="blog-entry">
+    <header id="page-header" class="center-text">
+        <h1><a href="{{ .RelPermalink | absLangURL }}">{{ .Title }}</a></h1>
+        <picture id="header-stripes">
+            <source type="image/webp" srcset="{{ .Site.BaseURL }}images/header-stripes.webp">
+            <img src="{{ .Site.BaseURL }}images/header-stripes.png" alt="0 A.D. Article Stripes" width="1000"
+                height="8">
+        </picture>
+        <picture id="header-triangle">
+            <source type="image/webp" srcset="{{ .Site.BaseURL }}images/header-triangle.webp">
+            <img src="{{ .Site.BaseURL }}images/header-triangle.png" alt="0 A.D. Article Triangle" width="62"
+                height="62">
+        </picture>
+        <p class="blog-info">Post on {{ .PublishDate.Format "January 2, 2006" }} by {{ .Params.author }} in {{ range .Params.categories
+            }}{{ . }}{{ end }}</p>
+    </header>
+    <div id="page-content">
+        {{ .Content }}
+    </div>
+</article>
+{{ end }}
+{{ end }}

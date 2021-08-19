@@ -1,0 +1,13 @@
+<!-- Main JS files -->
+{{- if not .Site.IsServer -}}
+{{ $script := resources.Get "js/0ad.js" | minify}}
+<script src="{{ $script.Permalink }}"></script>
+{{ with .Params.script }}{{ $path := $.Param "script" }}{{ $script := resources.Get $path }}{{ $min := $script | resources.Minify }}
+<script src="{{ $min.Permalink }}"></script>
+{{ end }}
+{{ else }}
+<script src="/js/0ad.js"></script>
+{{ with .Params.script }}{{ $path := $.Param "script" }}
+<script src="{{ $path }}"></script>
+{{ end }}
+{{ end }}

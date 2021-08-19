@@ -1,0 +1,4 @@
+<picture class="article-picture">
+    <source type="image/webp" srcset="{{ .Page.Permalink }}{{ .Get "src" }}.webp">
+    <img {{ with .Get "class" }} class="{{ . }}"{{ end }} src="{{ .Page.Permalink }}{{ .Get "src" }}.png" alt="{{ .Get "alt" }}" width="{{ .Get "width" }}" height="{{ .Get "height" }}">
+</picture>

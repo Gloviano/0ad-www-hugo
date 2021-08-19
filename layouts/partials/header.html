@@ -1,0 +1,134 @@
+<header id="site-header">
+    <div id="top-bar"></div>
+    <div id="bottom-bar">
+        <div id="logo-container">
+            <picture id="logo">
+                <source type="image/webp" srcset="{{ .Site.BaseURL }}images/logo.webp">
+                <img src="{{ .Site.BaseURL }}images/logo.png" alt="0 A.D Logo" width="355" height="168">
+            </picture>
+            <p id="site-description">{{ i18n "SiteDescription" }}</p>
+        </div>
+        <div id="download-container">
+            <a href="{{ "download/" | absLangURL }}">
+                <div id="download-button">
+                    <div>
+                        <h3>{{ i18n "Download" }}</h3>
+                        <p>{{ .Site.Params.gameVersion }}</p>
+                    </div>
+                    <picture id="download-arrow">
+                        <source type="image/webp" srcset="{{ .Site.BaseURL }}images/download-arrow.webp">
+                        <img src="{{ .Site.BaseURL }}images/download-arrow.png" alt="Download 0 A.D." width="46" height="46">
+                    </picture>
+                </div>
+            </a>
+        </div>
+        <div id="donate-container">
+            <div id="donate-button">
+                <h3>{{ i18n "Donate" }}</h3>
+                <p>{{ i18n "DonateSubtitle" }}</p>
+            </div>
+        </div>
+    </div>
+</header>
+<nav id="main-nav">
+    <ul>
+        <li>
+            <a href="{{ .Site.BaseURL }}">{{ i18n "Home" }}</a>
+        </li>
+        <li>
+            <a href="{{ .Site.BaseURL }}">{{ i18n "News" }}</a>
+        </li>
+        <li class="dropdown">
+            {{ i18n "GameInfo" }}
+            <ul class="dropdown-content">
+                <li>
+                    <a href="{{ "project-overview/" | absLangURL }}">{{ i18n "ProjectOverview" }}</a>
+                </li>
+                <li>
+                    <a href="{{ "contact-us/" | absLangURL }}">{{ i18n "Download0AD" }}</a>
+                </li>
+                <li>
+                    <a href="{{ "features/" | absLangURL }}">{{ i18n "Features" }}</a>
+                </li>
+                <li>
+                    <a href="{{ "factions/" | absLangURL }}">{{ i18n "Factions" }}</a>
+                </li>
+                <li>
+                    <a href="{{ "game-manual/" | absLangURL }}">{{ i18n "GameManual" }}</a>
+                </li>
+                <li>
+                    <a href="{{ "contact-us/" | absLangURL }}">{{ i18n "AwardsAcclaim" }}</a>
+                </li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            {{ i18n "Media" }}
+            <ul class="dropdown-content">
+                <li>
+                    <a href="{{ "contact-us/" | absLangURL }}">{{ i18n "Videos" }}</a>
+                </li>
+                <li>
+                    <a href="{{ "contact-us/" | absLangURL }}">{{ i18n "Screenshots" }}</a>
+                </li>
+                <li>
+                    <a href="{{ "contact-us/" | absLangURL }}">{{ i18n "Music" }}</a>
+                </li>
+                <li>
+                    <a href="{{ "contact-us/" | absLangURL }}">{{ i18n "BuildingConcepts" }}</a>
+                </li>
+                <li>
+                    <a href="{{ "contact-us/" | absLangURL }}">{{ i18n "UnitConcepts" }}</a>
+                </li>
+                <li>
+                    <a href="{{ "contact-us/" | absLangURL }}">{{ i18n "Wallpapers" }}</a>
+                </li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            {{ i18n "Community" }}
+            <ul class="dropdown-content">
+                <li>
+                    <a href="{{ "contact-us/" | absLangURL }}">{{ i18n "Donate" }}</a>
+                </li>
+                <li>
+                    <a href="{{ "participate/" | absLangURL }}">{{ i18n "Participate" }}</a>
+                </li>
+                <li>
+                    <a href="https://wildfiregames.com/forum/" target="_blank">{{ i18n "Forums" }}</a>
+                </li>
+                <li>
+                    <a href="http://webchat.quakenet.org/?channels=0ad" target="_blank">{{ i18n "IRCChannel" }}</a>
+                </li>
+                <li>
+                    <a href="{{ "support/" | absLangURL }}">{{ i18n "Support" }}</a>
+                </li>
+                <li>
+                    <a href="https://0ad.mod.io/" target="_blank">{{ i18n "GameMods" }}</a>
+                </li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            {{ i18n "About" }}
+            <ul class="dropdown-content">
+                <li>
+                    <a href="{{ "contact-us/" | absLangURL }}">{{ i18n "ContactUs" }}</a>
+                </li>
+                <li>
+                    <a href="{{ "organization/" | absLangURL }}">{{ i18n "Organization" }}</a>
+                </li>
+                <li>
+                    <a href="{{ "contributors/" | absLangURL }}">{{ i18n "Contributors" }}</a>
+                </li>
+                <li>
+                    <a href="{{ "legal-notices/" | absLangURL }}">{{ i18n "LegalNotices" }}</a>
+                </li>
+                <li>
+                    <a href="{{ "official-logos/" | absLangURL }}">{{ i18n "OfficialLogos" }}</a>
+                </li>
+                <li>
+                    <a href="{{ "the-story-of-0ad/" | absLangURL }}">{{ i18n "Story0AD" }}</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>

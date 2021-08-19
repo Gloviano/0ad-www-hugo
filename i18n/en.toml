@@ -1,0 +1,45 @@
+# Header Strings
+SiteDescription = "A free, open-source game of ancient warfare"
+
+# Menu Strings
+Home = "Home"
+Download = "Download"
+Download0AD = "Download 0 A.D."
+DonateTo0AD = "Donate To 0 A.D."
+DonateSubtitle = "Support the development of 0 A.D."
+News = "News"
+
+GameInfo = "Game Info"
+ProjectOverview = "Project Overview"
+Features = "Features"
+Factions = "Factions"
+GameManual = "Game Manual"
+AwardsAcclaim = "Awards & Acclaim"
+
+Media = "Media"
+Videos = "Videos"
+Screenshots = "Screenshots"
+Music = "Music"
+BuildingConcepts = "Building Concepts"
+UnitConcepts = "Unit Concepts"
+Wallpapers = "Wallpapers"
+
+Community = "Community"
+Donate = "Donate"
+Participate = "Participate"
+Forums = "Forums"
+IRCChannel = "IRC Channel"
+Support = "Get Support"
+GameMods = "0 A.D. Mods"
+
+About = "About"
+ContactUs = "Contact Us"
+Organization = "Organization"
+Contributors = "Contributors"
+LegalNotices = "Legal Notices"
+OfficialLogos = "Official Logos"
+Story0AD = "The Story of 0 A.D."
+
+
+[FollowUs]
+ other = "Follow Us"

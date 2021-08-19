@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}" prefix="og: http://ogp.me/ns#">
+{{- partial "head.html" . -}}
+<body>
+    {{- partial "header.html" . -}}
+    <main>
+        {{- block "main" . }}{{- end }}
+    </main>
+    {{- partial "footer.html" . -}}
+    {{- partial "scripts.html" . -}}
+</body>
+</html>
