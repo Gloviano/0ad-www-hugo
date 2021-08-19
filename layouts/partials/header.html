@@ -1,11 +1,11 @@
 <header id="site-header">
     <div id="top-bar"></div>
     <div id="bottom-bar">
+        <picture id="logo">
+            <source type="image/webp" srcset="{{ .Site.BaseURL }}images/logo.webp">
+            <img src="{{ .Site.BaseURL }}images/logo.png" alt="0 A.D Logo" width="355" height="168">
+        </picture>
         <div id="logo-container">
-            <picture id="logo">
-                <source type="image/webp" srcset="{{ .Site.BaseURL }}images/logo.webp">
-                <img src="{{ .Site.BaseURL }}images/logo.png" alt="0 A.D Logo" width="355" height="168">
-            </picture>
             <p id="site-description">{{ i18n "SiteDescription" }}</p>
         </div>
         <div id="download-container">
@@ -45,7 +45,7 @@
                     <a href="{{ "project-overview/" | absLangURL }}">{{ i18n "ProjectOverview" }}</a>
                 </li>
                 <li>
-                    <a href="{{ "contact-us/" | absLangURL }}">{{ i18n "Download0AD" }}</a>
+                    <a href="{{ "download/" | absLangURL }}">{{ i18n "Download0AD" }}</a>
                 </li>
                 <li>
                     <a href="{{ "features/" | absLangURL }}">{{ i18n "Features" }}</a>

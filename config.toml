@@ -1,4 +1,4 @@
-baseURL = "https://gloviano.github.io"
+baseURL = "https://gloviano.github.io/0ad-www-hugo/"
 languageCode = "en"
 defaultContentLanguage = "en"
 assetDir = "static"
@@ -39,8 +39,3 @@ disableLiveReload = false
         languageName = "русский"
         title = "DEV - 0 A.D. | Бесплатная игра про древнюю войну с открытым исходным кодом"
         weight = 2
-
-    [languages.es]
-        languageName = "Español"
-        title = "REPLACE ME"
-        weight = 3
