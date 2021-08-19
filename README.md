@@ -1,1 +1,1 @@
-0AD Website Re-Write in Hugo
+0 A.D. Website Re-Write using Hugo

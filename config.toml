@@ -1,4 +1,4 @@
-baseURL = "https://play0ad.com/"
+baseURL = "https://gloviano.github.io"
 languageCode = "en"
 defaultContentLanguage = "en"
 assetDir = "static"
@@ -28,7 +28,7 @@ disableLiveReload = false
             [markup.goldmark.parser.attribute]
                 block = true
                 title = true
-                
+
 [languages]
     [languages.en]
         languageName = "English"
