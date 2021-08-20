@@ -1,0 +1,457 @@
+<!doctype html><html lang=en prefix="og: http://ogp.me/ns#"><head><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=author content="0ad">
+<meta name=description content="0 A.D. Game Manual">
+<meta name=”theme-color” content="”#26203E">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DEV - 0 A.D. | A free, open-source game of ancient warfare">
+<meta property="og:description" content="0 A.D. is a free, open-source, historical Real Time Strategy (RTS) game currently under development by Wildfire Games, a global group of volunteer game developers.">
+<meta property="og:url" content="https://gloviano.github.io/0ad-www-hugo/game-manual/">
+<meta property="og:image" content="https://gloviano.github.io/0ad-www-hugo/">
+<meta property="og:image:secure_url" content="https://gloviano.github.io/0ad-www-hugo/">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content>
+<meta property="og:site_name" content="0ad">
+<meta property="article:published_time" content="2021-08-18T00:00:00Z">
+<meta property="article:modified_time" content="2021-08-19T20:35:35+0300">
+<meta property="article:author" content>
+<meta property="fb:app_id" content>
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:title content="DEV - 0 A.D. | A free, open-source game of ancient warfare">
+<meta name=twitter:description content="0 A.D. is a free, open-source, historical Real Time Strategy (RTS) game currently under development by Wildfire Games, a global group of volunteer game developers.">
+<meta name=twitter:site content="@play0ad">
+<meta name=twitter:image content="https://gloviano.github.io/0ad-www-hugo/">
+<meta name=twitter:creator content="@play0ad"><title>0 A.D. Game Manual - 0ad</title>
+<link rel=icon sizes=16x16 type=image/x-icon href=data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3AsHEhUUceI6KwAAAoFJREFUOMulk0tIlGEUhp//n4tzT8dxUCk0b6FdBrOLFySIQtpEiERUkBBFkNRGayFURG1SIrosapVB0SIikgq6WdBlYSJEG200NTVTs/EyM44z/qfFj5fRWvXBWXzv+b73nPOecxRA+I9jXArYLAZ8OU5KilJJS7Ggmsy8e9/L04/DRKLLYymLM9izLZVTB/OwJdnp+RmhtHwVXwemyc7zoI2McO5SK7cefltGIoDU7c+Rxw3FcrwqU+wWgzgcVul5UylOM2KxJEh97U4ZaauWq2fLZO7PXHCp2p4uzy6XSqkvad7h9a6Q3rd7xeM0zGMVFZvld8dJqTm0foHAaTfJ6yslUr0rPY7Z63XIUNs+8boMcfiZ05US6KsVu1m/q+W+ZMYmItx9MbikMo2p/gAxLR690PAITCaOHPABoK7LduHvnyIa0xWdM5OqMDYeRURQFimuaRqfPgxQtsWtt9FihJQkC401BcQ0BasZEswGBLCKxs36TWia4HZbSfTYMJqNuFIjGMP6BBinYzA0Os2N5n4MqoKqKCgKeJMt5KbZaLjXxWRYA6MKioFIROXO+Q386AnoBINjM6zJdzA4HIqrNRiOMjWt0dEdYCI0G+fL9RTR/EonUFvaR0h2J7C1wBU/HJoQm4khS4Zvd2kKk5NhHrTooqsDg0Fefg5QU7maRIc6/3BWE8aDUdQFCI/LyOHdmdx+0kd3b1AnALh+v4ug1U3DsXw25jr0DBQFEYhG9T76suxcO7GWvnGNi03+v+9C3dFCijMMjP4K09o5zo5CD8/bhsnPcJKeYqO9N0hjU+e/lwkga6UDX66LzHQHZlUIzWj4B0J88U/wfSi4bJH+AGfjCg6TIDefAAAAAElFTkSuQmCC>
+<link rel=stylesheet href=https://gloviano.github.io/0ad-www-hugo/css/style.min.css type=text/css>
+</head><body><header id=site-header>
+<div id=top-bar></div>
+<div id=bottom-bar>
+<picture id=logo>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/logo.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/logo.png alt="0 A.D Logo" width=355 height=168>
+</picture>
+<div id=logo-container>
+<p id=site-description>A free, open-source game of ancient warfare</p>
+</div>
+<div id=download-container>
+<a href=https://gloviano.github.io/0ad-www-hugo/download/>
+<div id=download-button>
+<div>
+<h3>Download</h3>
+<p>Alpha 25: Yaunā</p>
+</div>
+<picture id=download-arrow>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/download-arrow.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/download-arrow.png alt="Download 0 A.D." width=46 height=46>
+</picture>
+</div>
+</a>
+</div>
+<div id=donate-container>
+<div id=donate-button>
+<h3>Donate</h3>
+<p>Support the development of 0 A.D.</p>
+</div>
+</div>
+</div>
+</header>
+<nav id=main-nav>
+<ul>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/>Home</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/>News</a>
+</li>
+<li class=dropdown>
+Game Info
+<ul class=dropdown-content>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/project-overview/>Project Overview</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/download/>Download 0 A.D.</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/features/>Features</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/factions/>Factions</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/game-manual/>Game Manual</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Awards & Acclaim</a>
+</li>
+</ul>
+</li>
+<li class=dropdown>
+Media
+<ul class=dropdown-content>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Videos</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Screenshots</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Music</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Building Concepts</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Unit Concepts</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Wallpapers</a>
+</li>
+</ul>
+</li>
+<li class=dropdown>
+Community
+<ul class=dropdown-content>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Donate</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/participate/>Participate</a>
+</li>
+<li>
+<a href=https://wildfiregames.com/forum/ target=_blank>Forums</a>
+</li>
+<li>
+<a href="http://webchat.quakenet.org/?channels=0ad" target=_blank>IRC Channel</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/support/>Get Support</a>
+</li>
+<li>
+<a href=https://0ad.mod.io/ target=_blank>0 A.D. Mods</a>
+</li>
+</ul>
+</li>
+<li class=dropdown>
+About
+<ul class=dropdown-content>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Contact Us</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/organization/>Organization</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contributors/>Contributors</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/legal-notices/>Legal Notices</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/official-logos/>Official Logos</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/the-story-of-0ad/>The Story of 0 A.D.</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main>
+<article>
+<header class="page-header center-text">
+<h1>0 A.D. Game Manual</h1>
+<picture class=header-stripes>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.png alt="0 A.D. Article Stripes" width=1000 height=8>
+</picture>
+<picture class=header-triangle>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.png alt="0 A.D. Article Triangle" width=62 height=62>
+</picture>
+</header>
+<div class=page-content>
+<h2 id=game-objectives-and-rules>Game Objectives and Rules</h2>
+<p>In a nutshell, in <strong>0 A.D.</strong>, you start out with three things:</p>
+<ul>
+<li><strong>Buildings</strong>, such as civic centers,</li>
+<li><strong>Units</strong>, such as female citizens and male soldiers, that you can move around the map and use to gather resources, build or fight, and</li>
+<li>Some initial amounts of four <strong>resources</strong>: Food, Wood, Stone and Metal.</li>
+</ul>
+<p>In 0 A.D., you need to gather more of these four resources, and then use them to train (create) various units at your buildings. In turn, you will need to put some of the new units to work gathering more resources and building more types of buildings. In this way, you build a strong economy with a constant income stream of all four resources, and prepare for building a strong military.</p>
+<p>As soon as possible, you need to train a large, powerful army, that can even include siege weapons and war ships. Training each of these military units costs the resources you gathered.</p>
+<p>Ultimately, you will send off your army to battle in an attempt to destroy all your enemies’ structures that can generate units, and all units that can construct buildings. The first player that achieves this goal, wins.</p>
+<hr>
+<h2 id=user-interface-basics>User Interface Basics</h2>
+<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
+<iframe src=https://www.youtube-nocookie.com/embed/xxs4-6gHKpw style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="0 A.D. Tutorial 1: Basic Controls"></iframe>
+</div>
+<p>The following inputs affect what happens on screen:</p>
+<ul>
+<li><strong>Selecting objects</strong>: Left-click to select an object, such as a building or a unit. (Notice an outline appears on the ground at the base of the selected object.) You can select many objects at once by dragging the mouse.</li>
+<li><strong>Tasks</strong>: If you right-click when a unit is selected, you tell it to do something. If you right-click an empty piece of ground: the unit will move there; right-click an enemy unit: it will attack it; right-click a tree, it will chop it to gather wood, etc.</li>
+<li><strong>Moving the camera</strong>: Move the mouse towards an edge of the screen to move the camera in that direction and see more of the game world. Also: You can press the arrow keys (or the w, a, s or d keys) to move the camera.</li>
+<li><strong>Rotate map</strong>: Either with Shift + Mouse wheel rotation, or with the Q and E keys.</li>
+</ul>
+<p><strong>Further reading</strong>
+A full list of hotkeys is on the 0 A.D. Development Wiki.</p>
+<hr>
+<h2 id=gathering-resources>Gathering Resources</h2>
+<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
+<iframe src=https://www.youtube-nocookie.com/embed/QRF53HLElCc style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="0 A.D. Tutorial 2: Resources"></iframe>
+</div>
+<p>The sum of all resources on the map is limited. These resources can be gathered in several ways:</p>
+<ul>
+<li><strong>Food</strong>: Foraging from bushes and certain trees; Hunting certain wild animals or slaughtering livestock, such as chickens and sheep; Fishing; Farming.</li>
+<li><strong>Wood</strong>: Chopping down trees.</li>
+<li><strong>Stone</strong>: Mining from stone mines.</li>
+<li><strong>Metal</strong>: Mining from metal mines. (These occasionally sparkle, to make them easier to tell apart from stone mines.)
+(On certain maps, you can also quickly gather a great deal of resources from special treasures found on the map, such as shipwrecks.)</li>
+</ul>
+<h3 id=shuttling-to-dropsites>Shuttling to Dropsites</h3>
+<p>When units gather a resource, there is only so much they can carry. Then they need to shuttle the resources they have gathered to a building that serves as their resource dropsite and drop it off there. Only then can they return to gather more resources.</p>
+<ul>
+<li><strong>Civic centers</strong> and <strong>docks</strong> serve as dropsites for all four resources.</li>
+<li><strong>Mills</strong> serve as dropsites for wood, stone and metal only.</li>
+<li><strong>Farmsteads</strong> serve as dropsites for food.</li>
+</ul>
+<p>Units automatically shuttle the resources they have been gathering to the nearest dropsite that can accept it. It might be a good idea to build dropsites near their corresponding resources, to make sure your gathering units only have to shuttle short distances, which makes gathering more efficient.</p>
+<hr>
+<h2 id=training-units>Training Units</h2>
+<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
+<iframe src=https://www.youtube-nocookie.com/embed/2nIQKw02xVE style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="0 A.D. Tutorial 3 - Units"></iframe>
+</div>
+<p>Most buildings in 0 A.D. can train (create) units. If you select a building, you can see in the bottom right panel what types of units can be trained at that building, and how much each type costs.</p>
+<h3 id=population>Population</h3>
+<p>Every new unit counts toward your <strong>population</strong> limit, indicated on the top left of your screen. The limit can be increased, by building more buildings such as houses.</p>
+<h3 id=rally-points>Rally Points</h3>
+<p>If you select a building and then right-click a spot on the ground, you will create a <strong>rally point</strong>, which is a destination each new unit created from that building will automatically go to. Rally points can be set on resources, so that units will automatically gather that type of resource when they are created.</p>
+<hr>
+<h2 id=working-with-units>Working with Units</h2>
+<p>Units in 0 A.D. can be placed on a continuum from “civilian-only”, which are almost exclusively used for accumulating resources, to “military-only”, which can only fight. In the middle, the game features a wide variety of citizen soldiers, which can do a little bit of both.</p>
+<h3 id=female-citizens>Female Citizens</h3>
+<p>You usually start out a game with a few <strong>female citizens</strong>, who are the driving force of your economy. They specialize in gathering resources, particularly Food, by foraging and farming more efficiently than other units. They can also build civic buildings, such as resource dropsites, and cause nearby male units to work faster. Although they can attack enemy units, they are very vulnerable to practically any other unit.</p>
+<h3 id=citizen-soldiers>Citizen soldiers</h3>
+<p>Some units have the dual role of both workers and soldiers, meaning they are <strong>citizen soldiers</strong>. For example, hoplites can not only fight but also chop wood. Citizen Soldiers have bonuses for gathering wood, stone and metal. Certain buildings, such as fortresses, can only be built by citizen soldiers.</p>
+<h3 id=ranks>Ranks</h3>
+<p>The more citizen soldiers fight, the more battle experience they gain, and automatically go up the <strong>ranks</strong>. With each rank, they become stronger, and don a unique appearance, but also get gradually worse at “civilian” tasks, such as gathering resources.</p>
+<h3 id=champions-and-heroes>Champions and Heroes</h3>
+<p>You may also train <strong>champion units</strong>, which are more expensive than citizen soldiers and cannot do any task but fight, but are stronger and better at fighting. You can also train exactly one hero in a game, which is a very strong unique unit.</p>
+<hr>
+<h2 id=exploring-the-map>Exploring the Map</h2>
+<h3 id=shroud-of-darkness>Shroud of Darkness</h3>
+<p>You begin with only a small portion of the map revealed to you; The rest is covered in black. This black cover is called the <strong>Shroud of Darkness</strong>, and it may be hiding your enemies’ base, useful resources and more. The shroud is gradually removed and the map is gradually revealed when you send units to explore new parts of the map.</p>
+<h3 id=fog-of-war>Fog of War</h3>
+<p>Areas that you have explored, but currently do not have any units or buildings in them, appear with a grey shading covering them. This is the <strong>Fog of War</strong>. Even if things change on the map, under the Fog of War you you will only see objects as they were when your units or buildings last “saw” them. For example, if trees are cut down or a new enemy building is built under the Fog of War, you won’t see the change unless you send a unit there again. Importantly, enemy units are not seen at all under the Fog of War.</p>
+<p>If you have allies, you can see whatever parts of the map your allies have explored and vice versa.</p>
+<h3 id=gathering-intelligence>Gathering Intelligence</h3>
+<p>When exploring the map, you should be trying to find:</p>
+<ul>
+<li>Treasures,</li>
+<li>Resources,</li>
+<li>Strategic areas on the map, such as river crossings,</li>
+<li>The location of your enemies’ bases,</li>
+<li>How fortified your enemies’ bases are,</li>
+<li>What sort of military units they have been training,</li>
+<li>and more.</li>
+</ul>
+<p>All of this information can help you make the decisions that will make you victorious, such as the best direction to expand your base, and the types of units you should be training to counter your adversary.</p>
+<hr>
+<h2 id=dynamic-territories>Dynamic Territories</h2>
+<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
+<iframe src=https://www.youtube-nocookie.com/embed/ya5-tN1PV4Y style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="0 A.D. Tutorial 4 - Territories and Buildings"></iframe>
+</div>
+<p>Most buildings can only be built within your own <strong>territory</strong>, marked by colored borders on the ground. Players can expand their territory by constructing buildings near their borders. (Some types of buildings will expand your territory more than others.) Borders may change throughout the game, based upon the buildings built and destroyed by the players.</p>
+<p>If one of a player’s buildings falls into enemy territory due to shifting borders, then the building will slowly lose loyalty until finally converting to the enemy’s side. This can be stopped and slowly reversed if the border shifts and the building comes back to the player’s side.</p>
+<h3 id=important-exceptions>Important Exceptions</h3>
+<p>There are a few important exceptions to this rule:</p>
+<ul>
+<li><strong>Outposts</strong>, <strong>Docks</strong> and Roman <strong>Entrenched Army Camps</strong> can be built outside your borders, but none of these will gain you new territory;</li>
+<li>The <strong>Civil Center</strong> can be built either on your territory or on unclaimed territory, but must be built a certain distance away from your existing civil centers. Building a civil center can gain you lots of extra territory. Moreover, as you progress through different phases of the game (see “Technologies and Game Phases”), the territory controlled by your Civic Centers will expand by a small amount.</li>
+</ul>
+<p>Docks do not lose loyalty/health outside your territory, but Outposts and Roman Entrenched Army Camps do. Roman Entrenched Army Camps can also be built in enemy territory.</p>
+<hr>
+<h2 id=technologies-and-phases>Technologies and Phases</h2>
+<h3 id=technologies>Technologies</h3>
+<p>Technologies, or techs, are economic or military bonuses that can be “researched” (bought) for resources at designated buildings. Hover over the technology buttons to learn about the costs and benefits of each technology.</p>
+<p>In 0 A.D., some technologies come in mutually exclusive pairs: This means that within each pair, you can either research one technology or the other, but not both in the same game. These technology pairs are represented on your screen by a link symbol “connecting” two buttons.</p>
+<h3 id=phases>Phases</h3>
+<p>0 A.D. describes the progression of a city from humble beginnings to greatness in three phases: the <strong>Village Phase</strong>, the <strong>Town Phase</strong>, and the <strong>City Phase</strong>. When the game starts, you are already in the Village Phase. If you want to progress to the Town and City Phases, you need to research each of these at the Civic Center.</p>
+<p>Phases are like technologies, but much more valuable, because by reaching a new phase you unlock many new types of buildings, units and technologies. Researching each phase is not only expensive but also requires you to have constructed certain buildings:</p>
+<ul>
+<li>Advancing to the <strong>Town Phase</strong> costs 500 Food, 500 Wood, and requires having built five buildings of any type, except palisades and farm fields. (Five houses, for example, are sufficient, and so are three houses, a mill and a farmstead.)</li>
+<li>Advancing to the <strong>City Phase</strong> costs 1000 Stone and 1000 Metal, and requires having built four buildings of any type that becomes available in the Town Phase (except Walls and Civ Centers).</li>
+</ul>
+<hr>
+<h2 id=combat>Combat</h2>
+<h3 id=types-of-combat-units>Types of Combat Units</h3>
+<p>With a few exceptions, all combat units belong to one of these types:</p>
+<ul>
+<li><strong>Infantry</strong>: Warriors fighting on foot, with swords, bows and arrows, etc.,</li>
+<li><strong>Cavalry</strong>: Warriors on horseback,</li>
+<li><strong>Siege weapons</strong>, such as catapults, and</li>
+<li><strong>War ships</strong>, such as triremes.</li>
+</ul>
+<h3 id=melee-vs-ranged-units>Melee vs. Ranged Units</h3>
+<p>Some of the units mentioned here are <strong>melee units</strong>, which can only fight when very close to the enemy (e.g., with a sword); Others are <strong>ranged units</strong>, which shoot or throw a weapon from afar, so they only need to get close enough to be within range (but not too close). Each of these types has its advantages and disadvantages. For example, some ranged units may be very powerful against certain melee units from a distance, but helplessly vulnerable to melee attack from up close.</p>
+<h3 id=types-of-damage-and-balancing>Types of Damage and Balancing</h3>
+<p>Damage in 0 A.D. comes in three types: <strong>hack</strong>, <strong>pierce</strong> and <strong>crush</strong>. Units have different armor for each type. In addition, unit attacks may be of multiple types simultaneously, e.g., a hoplite does both pierce and hack damage.</p>
+<p>On top of this, some units have special bonuses against particular other units, e.g., spearmen defeat melee cavalry, but are countered by skirmishers and cavalry archers.</p>
+<p>Consider that different units have different movement speeds, firing rates, hit points and costs, and you get a complex game with many strategic choices to make when choosing how to spend your resources. In-game documentation can be found in each unit’s description when hovering above the button to train it.</p>
+<hr>
+<h2 id=trade-and-bartering>Trade and Bartering</h2>
+<h3 id=trade>Trade</h3>
+<p>Trading allows you to gain resources simply by having your traders shuttle between markets or docks. Traders that travel over land can be trained at markets, and merchant ships that sail over sea can be trained at the dock.</p>
+<p>(The following explanation refers to both markets and docks; “Market” is used for brevity.)</p>
+<p>Establish a trade route between two markets by selecting a trader and right-clicking two markets one after another, setting them as “origin” and “destination” markets. Your traders will then start shuttling between them, gaining resources for every round trip made; You can choose which resource will be gained by each trader. The longer time it takes to travel between the two markets, the more of that resource you will get at the end of each round trip.</p>
+<p>You can have a trader shuttle between two of your own markets, or between your market and an allied market. The latter case yields more resources per trip than the former.</p>
+<h3 id=bartering>Bartering</h3>
+<p>Bartering allows you to buy and sell resources in exchange for other resources at the market. Resources are traded at exchange rates that vary with each deal. For example, to purchase 100 Food, you may initially have to spend 100 points of another resource type (Wood, Stone, or Metal). By the next deal, however, Food will become more expensive. The rates are global, so if another player buys Food it will be more expensive for you as well. Over time, the exchange rate gradually resets to the default rate.</p>
+</div>
+</article>
+</main><button id=to-top title="Go To Top">&#10548;</button>
+<nav id=footer-nav>
+<div>
+<div>
+<h3>Donate To 0 A.D.</h3>
+<p>Donate Stuff</p>
+</div>
+<div>
+<h3>Game Info</h3>
+<ul>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/project-overview/>Project Overview</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/download/>Download 0 A.D.</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/features/>Features</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/factions/>Factions</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/game-manual/>Game Manual</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Awards & Acclaim</a>
+</li>
+</ul>
+</div>
+<div>
+<h3>Media</h3>
+<ul>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Videos</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Screenshots</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Music</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Building Concepts</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Unit Concepts</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Wallpapers</a>
+</li>
+</ul>
+</div>
+<div>
+<h3>Community</h3>
+<ul>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Donate</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/participate/>Participate</a>
+</li>
+<li>
+<a href=https://wildfiregames.com/forum/ target=_blank>Forums</a>
+</li>
+<li>
+<a href="http://webchat.quakenet.org/?channels=0ad" target=_blank>IRC Channel</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/support/>Get Support</a>
+</li>
+</ul>
+</div>
+<div>
+<h3>About</h3>
+<ul>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Contact Us</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/organization/>Organization</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contributors/>Contributors</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/legal-notices/>Legal Notices</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/official-logos/>Official Logos</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/the-story-of-0ad/>The Story of 0 A.D.</a>
+</li>
+</ul>
+</div>
+<div>
+<h3>Follow Us</h3>
+<ul>
+<li>
+<a href=http://play0ad.bandcamp.com/ target=_blank>BandCamp</a>
+</li>
+<li>
+<a href=http://facebook.com/play0ad target=_blank>Facebook</a>
+</li>
+<li>
+<a href=https://www.instagram.com/play0ad.official/ target=_blank>Instagram</a>
+</li>
+<li>
+<a href=https://www.linkedin.com/company/345131/ target=_blank>LinkedIn</a>
+</li>
+<li>
+<a href=https://mastodon.social/@play0ad target=_blank>Mastodon</a>
+</li>
+<li>
+<a href=http://www.moddb.com/games/0-ad target=_blank>ModDB</a>
+</li>
+<li>
+<a href=https://www.reddit.com/r/0ad/ target=_blank>Reddit</a>
+</li>
+<li>
+<a href=https://twitter.com/play0ad target=_blank>Twitter</a>
+</li>
+<li>
+<a href=https://www.youtube.com/play0ad target=_blank>YouTube</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<footer>
+<ul>
+<li>
+<a href=http://wildfiregames.com/>Wildfire Games</a>
+</li>
+<li>
+<a href=http://creativecommons.org/licenses/by-sa/3.0/>this website content is released under CC-BY-SA</a>
+</li>
+</ul>
+</footer>
+<script src=https://gloviano.github.io/0ad-www-hugo/js/0ad.min.js></script>
+</body>
+</html>

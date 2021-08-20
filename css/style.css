@@ -1,0 +1,392 @@
+/* Theme Variables */
+
+:root {
+    --color: rgb(63, 63, 63);
+}
+
+[data-theme="dark"] {
+    --color: rgb(246, 250, 237);
+}
+
+
+/* Global Classes */
+
+* { box-sizing: border-box; }
+
+html { overflow-x: hidden; }
+
+html, body {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    line-height: 25px;
+    background: #000 url(../images/bg-pattern.jpeg) repeat center top;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 100;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+table { border-collapse: collapse; }
+
+th {
+    padding: 8px 20px;
+    font-weight: normal;
+    color: white;
+    background-color: rgb(38, 38, 68);
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #2f3b5d;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+td:last-child, th:last-child {
+    border-right: none;
+}
+
+a { text-decoration: none; }
+
+p, li { color: var(--color); }
+
+mark {
+    padding: 5px 10px;
+    background-color: #b7ce4e;
+}
+
+.center { text-align: center; }
+
+/* Header CSS */
+
+#top-bar {
+    min-height: 30px;
+    background-color: rgb(72, 0, 0);
+    border-bottom: 1px solid rgb(232, 190, 72);
+}
+
+#bottom-bar {
+    position: relative;
+    display: flex;
+    height: 135px;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: flex-end;
+    background-color: black;
+    background-image: url(../images/header-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: 1px solid rgb(143, 124, 82);
+}
+
+#logo {
+    position: absolute;
+    top: -22px;
+    left: -22px;
+    z-index: 20;
+    pointer-events: none;
+}
+
+#site-description {
+    position: absolute;
+    top: 80px;
+    left: 145px;
+    font-size: 13px;
+    color: white;
+}
+
+#download-container, #donate-container {
+    padding-right: 30px;
+    align-self: center;
+}
+
+#download-button {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#donate-button {
+    background-color: rgba(250, 250, 250, 0.7);
+}
+
+#download-button h3 {
+    color: white;
+}
+
+#download-button p {
+    color: white;
+}
+
+#download-button, #donate-button {
+    padding: 5px 10px;
+}
+
+#download-button h3, #donate-button h3 {
+    margin: 5px 0;
+}
+
+#download-button p, #donate-button p {
+    margin: 0;
+    font-size: 13px;
+}
+
+#download-arrow {
+    height: 46px;
+    width: 46px;
+    margin-left: 20px;
+    align-self: center;
+}
+
+
+/* Navigation Menu */
+#main-nav { z-index: 10;}
+
+#main-nav > ul {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    text-align: center;
+    background-image: url(../images/menu-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid rgb(232, 190, 72);
+}
+
+#main-nav li {
+    width: 100%;
+    line-height: 40px;
+    color: white;
+    box-shadow: 10px 0px 6px -10px rgba(5, 5, 5, 0.75), inset -10px 0px 6px -10px rgba(5, 5, 5, 0.75);
+}
+
+#main-nav li:hover {
+    background-color: rgba(184, 134, 10, 0.4);
+}
+
+#main-nav li:not(:last-child) {
+    border-right: 1px solid black;
+}
+
+#main-nav a {
+    display: block;
+    color: white;
+}
+
+.dropdown {
+    z-index: 5;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.dropdown-content a {
+    padding: 0 20px 0 15px;
+}
+
+.dropdown:hover .dropdown-content { display: block; }
+
+/* Main Page */
+main {
+    margin: 25px auto;
+    max-width: 1000px;
+}
+
+.blog-entry:not(:first-child) {
+    margin-top:25px;
+}
+
+.blog-entry h1 {
+    margin-bottom: 10px;
+}
+
+.blog-entry a {
+    color: black;
+}
+
+.blog-info {
+    margin: 0;
+}
+
+/* Page CSS */
+article {
+    background-color: rgb(217, 217, 217);
+}
+
+article li { margin-top: 20px; }
+
+.page-header {
+    position: relative;
+    padding: 10px 20px;
+    color: black;
+    background-color: rgb(240, 240, 240);
+}
+
+.header-stripes img {
+    max-width: 100%;
+    object-fit: cover;
+    object-position: left;
+    margin-bottom: 5px;
+}
+
+.header-triangle {
+    display: block;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+}
+
+.page-content {
+    padding: 20px;
+    box-shadow: inset 0px 4px 3px -3px rgba(50, 50, 50, 0.75);
+}
+
+/* Footer CSS */
+footer {
+    min-height: 30px;
+    background-color: rgb(72, 0, 0);
+    border-top: 1px solid rgb(232, 190, 72);
+}
+
+footer ul {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 12px;
+}
+
+footer ul li {
+    margin: 0 0 0 10px;
+}
+
+footer ul li:not(:first-child)::before {
+    display: inline-block;
+    margin: 0 15px;
+    content: "|";
+}
+
+footer ul li a {
+ color: white;
+}
+
+#footer-nav {
+    padding: 20px;
+    font-size: 14px;
+    background-image: url(../images/footer-bg.png);
+    background-repeat: repeat;
+    background-position: center;
+    border-top: 1px solid rgb(232, 190, 72);
+}
+
+#footer-nav > div {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#footer-nav h3 {
+    margin-bottom: 0;
+    color: rgb(240, 240, 240);
+}
+
+#footer-nav ul {
+    padding: 0;
+    list-style-type: none;
+    line-height: 20px;
+}
+
+#footer-nav ul li a {
+    color: rgb(238, 232, 170);
+}
+
+#to-top {
+    visibility: hidden;
+    opacity: 0;
+    position: sticky;
+    left: 90%;
+    padding: 15px;
+    max-width: 50px;
+    max-height: 50px;
+    bottom: 0px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px 5px 0px 0px;
+    font-size: 20px;
+    line-height: 10px;
+    transition: opacity 800ms, visibility 800ms;
+}
+  
+#to-top:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Responsive Design CSS */
+
+@media (max-width: 1000px) {
+    article {
+        margin: 0 30px 0 20px;
+    }
+
+    #donate-container { display: none; }
+
+    #footer-nav > div { display: none; }
+}
+
+@media (max-width: 700px) {
+    #download-container { display: none; }    
+
+    #main-nav li { font-size: 14px; }
+}
+
+@media (max-width: 480px) {
+    #main-nav li { font-size: 12px; }
+}

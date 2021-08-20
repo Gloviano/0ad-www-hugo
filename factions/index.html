@@ -1,0 +1,471 @@
+<!doctype html><html lang=en prefix="og: http://ogp.me/ns#"><head><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=author content="0ad">
+<meta name=description content="0 A.D. Factions">
+<meta name=”theme-color” content="”#26203E">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DEV - 0 A.D. | A free, open-source game of ancient warfare">
+<meta property="og:description" content="0 A.D. is a free, open-source, historical Real Time Strategy (RTS) game currently under development by Wildfire Games, a global group of volunteer game developers.">
+<meta property="og:url" content="https://gloviano.github.io/0ad-www-hugo/factions/">
+<meta property="og:image" content="https://gloviano.github.io/0ad-www-hugo/">
+<meta property="og:image:secure_url" content="https://gloviano.github.io/0ad-www-hugo/">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content>
+<meta property="og:site_name" content="0ad">
+<meta property="article:published_time" content="2021-08-18T00:00:00Z">
+<meta property="article:modified_time" content="2021-08-19T20:35:35+0300">
+<meta property="article:author" content>
+<meta property="fb:app_id" content>
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:title content="DEV - 0 A.D. | A free, open-source game of ancient warfare">
+<meta name=twitter:description content="0 A.D. is a free, open-source, historical Real Time Strategy (RTS) game currently under development by Wildfire Games, a global group of volunteer game developers.">
+<meta name=twitter:site content="@play0ad">
+<meta name=twitter:image content="https://gloviano.github.io/0ad-www-hugo/">
+<meta name=twitter:creator content="@play0ad"><title>0 A.D. Factions - 0ad</title>
+<link rel=icon sizes=16x16 type=image/x-icon href=data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3AsHEhUUceI6KwAAAoFJREFUOMulk0tIlGEUhp//n4tzT8dxUCk0b6FdBrOLFySIQtpEiERUkBBFkNRGayFURG1SIrosapVB0SIikgq6WdBlYSJEG200NTVTs/EyM44z/qfFj5fRWvXBWXzv+b73nPOecxRA+I9jXArYLAZ8OU5KilJJS7Ggmsy8e9/L04/DRKLLYymLM9izLZVTB/OwJdnp+RmhtHwVXwemyc7zoI2McO5SK7cefltGIoDU7c+Rxw3FcrwqU+wWgzgcVul5UylOM2KxJEh97U4ZaauWq2fLZO7PXHCp2p4uzy6XSqkvad7h9a6Q3rd7xeM0zGMVFZvld8dJqTm0foHAaTfJ6yslUr0rPY7Z63XIUNs+8boMcfiZ05US6KsVu1m/q+W+ZMYmItx9MbikMo2p/gAxLR690PAITCaOHPABoK7LduHvnyIa0xWdM5OqMDYeRURQFimuaRqfPgxQtsWtt9FihJQkC401BcQ0BasZEswGBLCKxs36TWia4HZbSfTYMJqNuFIjGMP6BBinYzA0Os2N5n4MqoKqKCgKeJMt5KbZaLjXxWRYA6MKioFIROXO+Q386AnoBINjM6zJdzA4HIqrNRiOMjWt0dEdYCI0G+fL9RTR/EonUFvaR0h2J7C1wBU/HJoQm4khS4Zvd2kKk5NhHrTooqsDg0Fefg5QU7maRIc6/3BWE8aDUdQFCI/LyOHdmdx+0kd3b1AnALh+v4ug1U3DsXw25jr0DBQFEYhG9T76suxcO7GWvnGNi03+v+9C3dFCijMMjP4K09o5zo5CD8/bhsnPcJKeYqO9N0hjU+e/lwkga6UDX66LzHQHZlUIzWj4B0J88U/wfSi4bJH+AGfjCg6TIDefAAAAAElFTkSuQmCC>
+<link rel=stylesheet href=https://gloviano.github.io/0ad-www-hugo/css/style.min.css type=text/css>
+</head><body><header id=site-header>
+<div id=top-bar></div>
+<div id=bottom-bar>
+<picture id=logo>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/logo.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/logo.png alt="0 A.D Logo" width=355 height=168>
+</picture>
+<div id=logo-container>
+<p id=site-description>A free, open-source game of ancient warfare</p>
+</div>
+<div id=download-container>
+<a href=https://gloviano.github.io/0ad-www-hugo/download/>
+<div id=download-button>
+<div>
+<h3>Download</h3>
+<p>Alpha 25: Yaunā</p>
+</div>
+<picture id=download-arrow>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/download-arrow.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/download-arrow.png alt="Download 0 A.D." width=46 height=46>
+</picture>
+</div>
+</a>
+</div>
+<div id=donate-container>
+<div id=donate-button>
+<h3>Donate</h3>
+<p>Support the development of 0 A.D.</p>
+</div>
+</div>
+</div>
+</header>
+<nav id=main-nav>
+<ul>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/>Home</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/>News</a>
+</li>
+<li class=dropdown>
+Game Info
+<ul class=dropdown-content>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/project-overview/>Project Overview</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/download/>Download 0 A.D.</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/features/>Features</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/factions/>Factions</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/game-manual/>Game Manual</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Awards & Acclaim</a>
+</li>
+</ul>
+</li>
+<li class=dropdown>
+Media
+<ul class=dropdown-content>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Videos</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Screenshots</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Music</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Building Concepts</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Unit Concepts</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Wallpapers</a>
+</li>
+</ul>
+</li>
+<li class=dropdown>
+Community
+<ul class=dropdown-content>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Donate</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/participate/>Participate</a>
+</li>
+<li>
+<a href=https://wildfiregames.com/forum/ target=_blank>Forums</a>
+</li>
+<li>
+<a href="http://webchat.quakenet.org/?channels=0ad" target=_blank>IRC Channel</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/support/>Get Support</a>
+</li>
+<li>
+<a href=https://0ad.mod.io/ target=_blank>0 A.D. Mods</a>
+</li>
+</ul>
+</li>
+<li class=dropdown>
+About
+<ul class=dropdown-content>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Contact Us</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/organization/>Organization</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contributors/>Contributors</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/legal-notices/>Legal Notices</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/official-logos/>Official Logos</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/the-story-of-0ad/>The Story of 0 A.D.</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main>
+<article>
+<header class="page-header center-text">
+<h1>0 A.D. Factions</h1>
+<picture class=header-stripes>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.png alt="0 A.D. Article Stripes" width=1000 height=8>
+</picture>
+<picture class=header-triangle>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.png alt="0 A.D. Article Triangle" width=62 height=62>
+</picture>
+</header>
+<div class=page-content>
+<p><em><strong>Edit 2018-09-09</strong>: This content may be outdated. We hope to make a new website soon, which will be easier to maintain.</em></p>
+<p>The first edition of 0 A.D. will allow the player to control any of twelve ancient civilizations from the pre-common era. Each culture will be represented at the peak of its civilization, somewhere along the timeline of 500 B.C. to 1 B.C.</p>
+<p>Though a momentous task, we are working to ensure that each culture provides a unique yet balanced gameplay experience. Almost each civilization will have a unique set of buildings and units, and have notable strengths and weaknesses that must be learned and exploited by the player to be used effectively.</p>
+<hr>
+<h2 class=center id=the-carthaginian-empire>The Carthaginian Empire</h2>
+<p class=center><em>The sailors of Carthage were among the fiercest contenders on the high seas. The Punics were also masters of naval trade, extending their trade routes even beyond the pillars of Hercules and circumnavigating Africa. They deployed towered War Elephants on the battlefield to fearsome effect, and had defensive walls that could withstand years of siege.</em></p>
+<p>The Carthaginians, or Punics, were an ancient civilization centered on the Phoenician city-state of <strong>Carthage</strong>, located outside what is now Tunis, Tunisia. After gaining independence from Tyre, Carthage soon became a formidable force in the western Mediterranean, eventually taking over much of North Africa and modern-day Spain and becoming an economic powerhouse.</p>
+<p>Carthage’s ground forces were primarily made up of allied peoples and mercenaries, including Libyans, Numidians, Iberians and sometimes Greeks. Carthaginian citizens served in the ground forces almost exclusively as officers, and were only required to serve as infantry in special cases. By contrast, the Carthaginian navy was made up of Punic citizenry, heirs to the seafaring Phoenicians, and this undoubtedly contributed to Carthage going down in history as having one of the largest and strongest navies of ancient times.</p>
+<p>In 0 A.D. the Carthaginians will have many bonuses that match their historic strengths. These include:</p>
+<ul>
+<li>The widest selection of units: Because Carthage always relied on mercenaries to make up the bulk of their forces. The Carthaginians can build Iberian, Celtic, and Italian embassies, which are specialized barracks for mercenaries of these tribes.</li>
+<li>The strongest walls: Because of Carthage’s famous triple walls.</li>
+<li>The strongest navy: Because of the historical dominance of Carthage on the sea-lanes.</li>
+<li>More profitable trading: Because of the stranglehold Carthage had over trade in the Western Mediterranean.</li>
+<li>Special Buildings: Celtic Embassy, Iberian Embassy, Italiote Embassy (all of which train their respective mercenary units), Cothon (“Naval Shipyard”, constructs the mighty Carthaginian war fleet).</li>
+<li>Special Techs or Bonuses: Elephant Roundup (can capture wild elephants for a War Elephant training bonus), Exploration (greater vision range for ships and merchants), Colonization (Civic Centers, Temples, and Houses construct much faster).</li>
+<li>Wonder: Temple of Ba’al Ammon.</li>
+</ul>
+<p>(Sources: Israel Shatzman: A History of the Roman Republic (Hebrew); <a href=http://en.wikipedia.org/wiki/Ancient_Carthage target=_blank>English Wikipedia: Ancient Carthage</a>; <a href=http://en.wikipedia.org/wiki/Punic_Wars target=_blank>English Wikipedia: Punic Wars</a>, <a href=http://en.wikipedia.org/wiki/Punics target=_blank>English Wikipedia: Punics</a>. Thanks, Dor Ben-Ari!)</p>
+<hr>
+<h2 class=center id=the-celtic-tribes>The Celtic Tribes</h2>
+<h3 class=center id=britons-gauls>Britons, Gauls</h3>
+<p class=center><em>A nimble yet powerful assortment of tribes, the <strong>Britons</strong> and <strong>Gauls</strong> were the antithesis of the rigid organization of Rome. A fierce horde of woad-painted Celtic warriors charging across the plains was a fearsome sight. Can you lead from the hill forts and sacred groves to victory?</em></p>
+<p>The two Celtic factions in 0 A.D., the Britons and Gauls, are based on a group of tribal societies in Iron Age and Medieval Europe who spoke Celtic languages and shared similar ancestry, languages and culture. Over the first millenium BC, they spread from central Europe westward to modern-day France, Spain and the British isles.</p>
+<p>Tribal warfare appears to have been a regular feature in Celtic history, and they had a reputation as formidable head hunters. Celtic society had some female warriors, and they may have treated women more equally to men than other ancient cultures did. The Celtic priests, known as druids, carried out rites and sacrifices to their deities in remote areas such as hilltops, groves, and lakes.</p>
+<p>The Celts considered the bow and other ranged arms to be the weapons of cowards, and excelled in hand-to-hand combat. Though their wooden buildings were fast and inexpensive to build, they were also easier to destroy than their stone counterparts. These traits are all reflected in the gameplay in 0 A.D. Each of the two Celtic factions also features some unique characteristics:</p>
+<ul>
+<li>Shared Special Building: Rotary Mill (increases the food production of nearby farms).</li>
+<li>Shared Special Bonus: Iron Workers (because the Celts were the innovators of iron working, the Blacksmith building becomes available in the Village Phase at the start of the game).</li>
+<li>Shared Special Technologies: Druidic Conclave (Druides train twice as fast).</li>
+<li>The Britons have chariots, longswordsmen and powerful melee soldiers. Also, their heroes include Boudicca, queen of the Iceni, who led a revolt against the Roman Empire.</li>
+<li>Unique Special building: Kennel (trains War Dogs).</li>
+<li>Unique Special Techs and Bonuses: Woad Painting (greater attack and speed for melee units), Great Tower (stronger towers and fortresses).</li>
+<li>Wonder: White Horse of Uffington.</li>
+<li>The Gauls have heavy swordsmen and heavy cavalry. One of the Gauls’ heroes is Vercingetorix, chieftain of the Arverni tribe and enemy of Julius Caesar.</li>
+<li>Unique Special building: Tavern (trains “Naked Fanatic” champion infantry).</li>
+<li>Unique Special Techs and Bonuses: Woe to the Conquered (increased loot income), Carnutes (Druides gain an attack).</li>
+<li>Wonder: TBD.</li>
+</ul>
+<hr>
+<h2 class=center id=the-hellenic-states>The Hellenic States</h2>
+<h3 class=center id=athenians-spartans-macedonians>Athenians, Spartans, Macedonians</h3>
+<p class=center><em>Sparta, Athens and Macedonia are at your command. As the fore-bearers of philosophy, democracy, geometry, and Hellenistic art and architecture, their contributions to civil society were ever lasting. However, do not discount the strength of their stone structures, the resolve of a hoplite in phalanx formation, or their historic ability to steal victory against seemingly insurmountable odds.</em></p>
+<p>Greece, or <strong>“Hellas”</strong>, was one of the most vibrant and dominant cultures of the ancient world. Mostly organized in city states, the Hellenes developed advanced and sophisticated politics, art, architecture, scientific thought, literature, and philosophy. These aspects would later have a powerful influence on the Roman Empire and on Western Civilization at large. The Hellenes also stood out as a military force, and records show they often fought amongst themselves and against foreign enemies. Notably, under the leadership of Alexander the Great, Macedonian forces and allies took over most of the world they knew, including Egypt, Persia and parts of the Indian subcontinent, allowing a diffusion of Hellenic and eastern cultures for years to come.</p>
+<p>Each of the three Hellenic factions in 0 A.D., the <strong>Athenians</strong>, the <strong>Macedonians</strong> and the <strong>Spartans</strong>, features some unique characteristics along with shared technologies and buildings:</p>
+<ul>
+<li>Shared Special Building: Theatron (Theater).</li>
+<li>Shared Special Bonuses: Hellenization (construct a Theatron to expand the player’s territory significantly), Phalanx (a “shield wall” formation for Hoplite-style infantry that is very strong from the front).</li>
+<li>Shared Special Techs: Hoplitodromos (faster running and charging for Champions), Olympic Wrestling (greater health for Champions), Pankration (“Greek Martial Arts”, stronger attack for melee infantry, but longer train time), Othismos (Phalanx formation gains a “pushing” effect with greater attack).</li>
+<li>Receiving significant naval bonuses, the Athenians are the rulers of the waves. They can train marines from their triremes and can build their mighty stone walls through neutral territory after researching special technologies.</li>
+<li>Unique Special Buildings: Gymnaseion (trains champions and researches special techs), Prytaneion (“Council Chamber”, trains heroes, researches special techs).</li>
+<li>Unique Special Techs or Bonuses: Iphicratean Reforms (unlocks training of Athenian Marines and Cretan Archers from Triremes), Long Walls (City Walls can be built in neutral territory), Arsenal of Philon (warships regenerate health when near a dock), Zea Ship Sheds (warships build faster), Phidean Workshop (Temples and Parthenon build faster, but at greater cost).</li>
+<li>Wonder: Parthenon.</li>
+<li>The Macedonians span both the Greek (Hellenic) and Successor cultures and so benefit by having access to both the Hellenic and Successor Special Buildings and Technologies. They also have a wide variety of troops and siege weapons for a combined-arms approach.</li>
+<li>Unique Special Buildings: Siege Workshop (builds all siege engines).</li>
+<li>Unique Special Techs or Bonuses: Hellenistic Metropolis (part of their Successor culture, greater health and attack for Civic Centers), Military Reforms (when built, barracks spawn free units), Hellenic League (greater attack vs. Persians and Greeks, but lower attack vs. Romans), Syntagma Formation (a strong formation for pike units, part of their Successor culture).</li>
+<li>Wonder: Mausoleum of Halicarnassus.</li>
+<li>The Spartans can’t build stone walls, but as their soldiers are top-notch, their men serve as their walls instead. They have a -10% population penalty (e.g., 270 instead of 300), which makes them an underdog faction.</li>
+<li>Unique Special Building: Syssition (“Military Mess Hall”, trains Spartan heroes and mighty Spartiate hoplites).</li>
+<li>Unique Special Techs or Bonuses: The Agoge (Hoplites and Spartiates have much greater health), Feminine Mystique (Spartan women fight back and can build defenses), Phalanx Formation, Tyrtean Paeans (Hoplites and Spartiates move faster when in Phalanx Formation).</li>
+<li>Wonder: Sanctuary of Artemis.</li>
+</ul>
+<hr>
+<h2 class=center id=the-iberian-tribes>The Iberian Tribes</h2>
+<p class=center><em>The Iberians were fathers of the art of guerrilla warfare, capable of lightning strikes against an opponent, followed by an instant withdrawal. Beware their foot units, who not only move quickly but fire rapidly, particularly their Balearic Slingers. A number of their ranged units also had the unique ability to fire flaming missiles. Toledo steel grants them superior metal weaponry.</em></p>
+<p>Very little is known about the native <strong>Iberians</strong>, and the ancient Iberian language remains linguistically unclassified to this day.</p>
+<p>What little we do know from historical sources describing the Iberian tribes, however, is that they were not a warlike people; they did hire out mercenaries to other peoples, but they rarely themselves went to war. Organized as a loose confederation of tribes and cities, their economy subsisted of agriculture, metalworking and exporting metals.</p>
+<p>When under threat, however, Iberia did not lend itself easily to conquest. Not even the great Hannibal could accomplish the task, and it took the Romans 200 years. Part of this has to do with two distinct features of the way the Iberians waged war: One was the guerrilla war style of fighting they employed; in fact, the Iberians invented guerrilla warfare. The second was the strong fortifications they built, the oppidum (a fortified town) and the castro (a hill fort). (More info: <a href=http://en.wikipedia.org/wiki/Castro_culture target=_blank>Wikipedia: Castro culture</a> and <a href=http://en.wikipedia.org/wiki/Castros_in_Spain target=_blank>Wikipedia: Castros in Spain</a>).</p>
+<p>In 0 A.D., the Iberians will have many bonuses to match their historic strengths. These bonuses include:</p>
+<ul>
+<li>Elite Warriors: These can cause great damage with few numbers.</li>
+<li>Cavalry Cost: Because of the large horse herds and some of the finest horses in ancient Europe, the Iberians’ cavalry will cost less.</li>
+<li>Flaming Javelins: There was a frequent practice among some Iberian tribes of dousing their javelins in pitch. Javelin-using units will throw flaming javelins after researching this unique technology.</li>
+<li>Special Building: Revered Monument (attack bonus to nearby units).</li>
+<li>Special Techs or Bonuses: Horse Roundup (can capture wild horses for cavalry training bonuses), Flaming Javelins (greater attack against buildings for javelin units), Toledo Steel (greater attack for sword units).</li>
+<li>Wonder: TBD.</li>
+</ul>
+<hr>
+<h2 class=center id=the-mauryan-empire>The Mauryan Empire</h2>
+<p class=center><em>Founded in 322 B.C. by Chandragupta Maurya, the Mauryan Empire was the first to rule most of the Indian subcontinent, and was one of the largest and most populous empires of antiquity. Its military featured bowmen who used the long-range bamboo longbow, fierce female warriors, chariots, and thousands of armored war elephants. Its philosophers, especially the famous Acharya Chanakya, contributed to such varied fields as economics, religion, diplomacy, warfare, and good governance. Under the rule of Ashoka the Great, the empire saw 40 years of peace, harmony, and prosperity.</em></p>
+<p>The <strong>Mauryans</strong> originated in the kingdom of Magadha and were ruled by the Mauryan dynasty, founded by Chandragupta Maurya, between 322 BC and 185 BC. At the time, it dominated the Indian subcontinent and was one of the largest empires in the world.</p>
+<p>In 0 A.D. the Mauryans will have many bonuses that match their historic strengths. These include:</p>
+<ul>
+<li>Large Population: A +10% population cap bonus (e.g., 330 instead of 300, 275 instead of 250).</li>
+<li>Long-range Archery: Mauryan archers have the longest range of any archer unit in the game.</li>
+<li>Elephants: Access to 3 different elephant units, including the Armored War Elephant, Elephant Archer, and Worker Elephant, which acts like a mobile dropsite for resources. Wild Elephants are also capturable and give an elephant training bonus when tasked to the Elephant Stables.</li>
+<li>Special Building: Edict Pillar of Ashoka (increased gathering and health for nearby units). Elephant Stables (trains powerful elephant units).</li>
+<li>Special Techs or Bonuses: Emperor of Emperors (+10% Population Cap), Kṣhatriya Warrior Caste, Elephant Roundup (can capture wild elephants for a War Elephant training bonus), Archery Tradition (greater range and attack for archers), Wootz Steel (greater attack for sword units).</li>
+<li>Wonder: The Great Stupa of Sanchi, which houses a relic of the Great Buddha himself.
+(Sources: <a href=http://en.wikipedia.org/wiki/Maurya_Empire target=_blank>English Wikipedia: Maurya Empire</a>, <a href=http://en.wikipedia.org/wiki/Arthashastra target=_blank>English Wikipedia: Arthashastra</a>)</li>
+</ul>
+<hr>
+<h2 class=center id=the-achaemenid-persian-empire>The Achaemenid (Persian) Empire</h2>
+<p class=center><em>Cosmopolitan to the core, the Persian Empire levied a wide variety of troops from their vassal satrapies. Though their infantry were weak and poorly equipped, they could be massed in vast numbers. Their cavalry was strong and exotic yet expensive, and included the fearsome cavalry archer, camelry, mahout elephants, and scythed chariots. They were known for their lavish wealth, grand architecture and strong trade empire through the Silk Road.</em></p>
+<p>The <em>Persians</em> originated from the Pars province in the southern part of modern-day Iran. The Persian Empire, when ruled by the Achaemenid dynasty (ca. 550 BC–336 BC), was one of the greatest empires of antiquity, stretching at its zenith from the Indus Valley in the east, to Thrace and Macedon on the northeastern border of Greece.</p>
+<p>The Persians can be credited as the pioneers of empire-building of the Ancient World. Later empires, such as the Hellenistic and Roman empires, adopted many administrative innovations that the Persians had come up with. While taking over various peoples with different customs, laws, religions, languages, etc., the Persians imposed a centralized, bureaucratic administration under the emperor, with large, professional military and civil services.</p>
+<p>The ancient Persian army was largely comprised of national contingents from the various subject nations under the rule of the Great Kings. These contingents were organized along military/administrative lines and used a decimal system of organization by multiples of ten. Well-known national ‘regiments’ were: Medo-Persian, non-Medo-Persian Iranian, Lydian, Carian, Assyrian, Babylonian, Egyptian, Indian, Ethiopian, and Libyan.</p>
+<p>In 0 A.D. the Persians will have many bonuses that match their historic strengths. These include:</p>
+<ul>
+<li>Strong Archers and Cavalry: Persian archers are plentiful and have excellent range. They have access to all cavalry types from their Stables building.</li>
+<li>Excellent Land Trade: The best traders over land. The Persian Empire straddles the famous Royal Road and Silk Road trade routes.</li>
+<li>Strong Structures and Defenses: Persian buildings are very strong, but take longer to build.</li>
+<li>Special Building: Stables (to train cavalry), Apadana or “Palace” (trains heroes and Immortals).</li>
+<li>Special Techs or Bonuses: The Great King’s Levy (+10% population cap), Immortals (champion infantry train very fast), Equine Transports (triremes can train cavalry), Persian Architecture (greater health for all buildings), Roundup (can capture wild camels and horses for a training bonus for these types of units), Royal Road, Nisean War Horses (greater health for cavalry), Archery Tradition (greater range and attack for archers), Satrapy Tribute (Apadana gives a slow trickle of all resources).</li>
+<li>Wonder: Gate of All Nations.
+(Sources: <a href=http://en.wikipedia.org/wiki/Achaemenid_Empire target=_blank>English Wikipedia: Achaemenid Empire</a>; <a href=http://www.iranicaonline.org/articles/achaemenid-dynasty target=_blank>Encyclopaedia Iranica: Achaemenid Dynasty</a>)</li>
+</ul>
+<hr>
+<h2 class=center id=the-roman-republic>The Roman Republic</h2>
+<p class=center><em>Rome evolved from a republic in Latium to a great conquering imperial powerhouse, sweeping across Europe, the western shores of the Mediterranean and North Africa. The Romans were notable for their regimented military, powerful siege engines, broad range of naval vessels, politics, and adaptation to change.</em></p>
+<p>The <strong>Romans</strong> controlled the largest empire of the ancient world. Rising from a group of villages to controlling an empire stretching from southern Scotland to the Sahara Desert, Rome remained one of the strongest nations on earth for almost 800 years, controlling over 60 million inhabitants, one quarter of the Earth’s population at that time.</p>
+<p>Rome’s regime changed over time from a republican system to an autocratic empire. While the politicians seemed to be in control, the real power lay with the army. Indeed, war was the heart and soul of the Roman political system, affecting everything that the government did.</p>
+<p>Rome produced not only effective generals but formidable engineers. Today we owe many technological advances to the Romans, who were the supreme builders of the ancient world. Roads, massive buildings, and large mining and water movement projects were common. These inventions and more served to spread the Roman legacy that endures to this day, from language to medicine, from literature to government, and from legal codes to art, architecture and beyond.</p>
+<p>In 0 A.D. the Romans will have many bonuses that match their historic strengths. These include:</p>
+<ul>
+<li>Powerful infantry: Lots of technologies. Their Hastatus swordsman is the best swordsman in the game. They are severely lacking in the cavalry department though.</li>
+<li>Good siege equipment: The best siegers in the game. They have access to nearly all siege weapon types, and they can build siege walls and entrenched army camps in enemy territory.</li>
+<li>Excellent mining capabilities: They can research all technologies related to mining stone and metal.</li>
+<li>An excellent navy: On par with the Carthaginian and Ptolemaic naval forces, the Roman navy is one of the best in the game and has access to the Quinquereme heavy warship.</li>
+<li>Special Buildings: Siege Walls (can be built in neutral and enemy territory), Entrenched Army Camp (can be built in neutral and enemy territory and trains soldiers and siege weapons), Temple of Vesta (build one of these to prevent the capture of the player’s buildings as long as it exists).</li>
+<li>Special Techs or Bonuses: Roman Logistics (Army Camps and Siege Walls no longer decay), Sibylline Books (greater vision for units and buildings), Marian Reforms (unlock the Marian Legionnaire), Testudo Formation (a slow formation that is nearly impervious to ranged attacks), Citizenship (armor bonus for fighting in home territory), Socii (allies gain armor bonuses when fighting in Roman territory).</li>
+<li>Wonder: Temple of Jupiter Optimus Maximus.</li>
+</ul>
+<p>While the Romans may not specialize extremely well in specific areas, they are one of the most well-rounded civilizations in 0 A.D.[/wptabcontent]</p>
+<hr>
+<h2 class=center id=the-diadochi-successor-states>The Diadochi (Successor) States</h2>
+<h3 class=center id=macedonians-seleucids-ptolemies>Macedonians, Seleucids, Ptolemies</h3>
+<p class=center><em>The dissolution of Alexander’s Empire saw the rise of three chief successor states: The Seleucids in Syria and the Middle East, the Ptolemies in Egypt and Palestine, and the Macedonians in Greece. These states lasted as independent kingdoms for over 200 years until their absorption by the ever-growing Roman Republic. In that time, the Successors fought each other constantly, vying for expansion or glory.</em></p>
+<p>When Alexander the Great died (June 10, 323 BC), he left behind a huge empire which was composed of many essentially independent territories. Alexander’s empire stretched from his homeland of Macedon itself, along with the Greek city-states that his father had subdued, to Bactria and parts of India in the east. It included Anatolia, the Levant, Egypt, Babylonia, and Persia.</p>
+<p>The Diadochi (plural of Latin Diadochus, from Greek: Διάδοχοι, Diadokhoi, “Successors”) were the rival generals, family and friends of Alexander the Great who fought for the control of Alexander’s empire after his death. The Wars of the Diadochi were the turbulent opening of the Hellenistic period.</p>
+<p>After thirty years of successive wars, three chief kingdoms emerged from the ashes of Alexander’s empire: Macedon, Seleucid Syria, and Ptolemaic Egypt. These large and very powerful kingdoms also contended with many other tribes, kingdoms, empires, and states, such as Rome, Epirus, Mauryan India, Parthia, Pergamon, Rhodes, Thrace, Sparta, Athens, The Achaean League, the Aetolian League, and rampaging Gallic tribes known as Galatians.</p>
+<ul>
+<li>Shared Special Building: Library.</li>
+<li>Shared Special Techs and Bonuses: Hellenistic Metropolis (greater health and attack for Civic Centers), Syntagma Formation (a pike formation that is nearly invulnerable from the front), Pankration (“Greek Martial Arts”, stronger attack for melee infantry, but longer train time).</li>
+<li>The Macedonians span both the Greek (Hellenic) and Successor cultures and so benefit by having access to both the Hellenic and Successor Special Buildings and Technologies. They also have a wide variety of troops and siege weapons for a combined-arms approach.</li>
+<li>Unique Special Buildings: Siege Workshop (builds all siege engines), Theatron (part of their Hellenic culture bonus).</li>
+<li>Unique Special Techs or Bonuses: Military Reforms (when built, barracks spawn free units), Hellenic League (greater attack vs. Persians and Greeks, but lower attack vs. Romans), Hellenization (construct a Theatron to expand the player’s territory significantly), Phalanx (a “shield wall” formation for Champion Infantry that is very strong from the front).</li>
+<li>Wonder: Mausoleum of Halicarnassus.</li>
+<li>The successors in the East, the Seleucids combine Hellenism and Orientalism into one Hellenistic culture. They have access to Macedonian-style heavy infantry and Eastern-style light infantry and cavalry, including cataphracts, armored Indian war elephants, and scythe chariots.</li>
+<li>Unique Special Building: Klēroukhia Military Colony (replaces the Civic Center as the buildable expansion building and trains “Settler” units).</li>
+<li>Unique Special Techs or Bonuses: Traditional Army/Reform Army (unlock different Champions), Marriage Alliance (purchase 20 Indian War Elephants), Parade of Daphne (faster batch training at the Fortress), Nisean War Horses (greater health for all cavalry).</li>
+<li>Wonder: The Paradise of Daphne.</li>
+<li>An excellent navy and monumental architecture are hallmarks of the Ptolemies. Their “mercenary” soldiers are expensive, but powerful. Their “native” Egyptian soldiers are cheap and plentiful.</li>
+<li>Unique Special Buildings: Lighthouse (reveals all of the shorelines on the map), Mercenary Camp (trains all mercenary units).</li>
+<li>Unique Special Techs or Bonuses: Pharaonic Cult (hero auras boosted), Nile Delta (three additional farming techs not available to other factions), Roundup (can capture camels and elephants for training bonuses).</li>
+<li>Wonder: Temple of Edfu.</li>
+<li>The Successors share many traits in common, but are very unique factions to play, given their wide geographic distribution, unique heroes, and mix of economic and military bonuses.</li>
+</ul>
+<hr>
+<p>In future Expansion Packs, we hope to expand the number of available cultures by incorporating additional civilizations from 1 A.D. to 500 A.D. Possible civilizations include the Germanics, Vandals, Sarmatians, Late Rome, Imperial Rome, Eastern Rome (Early Byzantines), Saxons, Parthians, Huns, Dacians, and the Goths.</p>
+</div>
+</article>
+</main><button id=to-top title="Go To Top">&#10548;</button>
+<nav id=footer-nav>
+<div>
+<div>
+<h3>Donate To 0 A.D.</h3>
+<p>Donate Stuff</p>
+</div>
+<div>
+<h3>Game Info</h3>
+<ul>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/project-overview/>Project Overview</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/download/>Download 0 A.D.</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/features/>Features</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/factions/>Factions</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/game-manual/>Game Manual</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Awards & Acclaim</a>
+</li>
+</ul>
+</div>
+<div>
+<h3>Media</h3>
+<ul>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Videos</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Screenshots</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Music</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Building Concepts</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Unit Concepts</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Wallpapers</a>
+</li>
+</ul>
+</div>
+<div>
+<h3>Community</h3>
+<ul>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Donate</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/participate/>Participate</a>
+</li>
+<li>
+<a href=https://wildfiregames.com/forum/ target=_blank>Forums</a>
+</li>
+<li>
+<a href="http://webchat.quakenet.org/?channels=0ad" target=_blank>IRC Channel</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/support/>Get Support</a>
+</li>
+</ul>
+</div>
+<div>
+<h3>About</h3>
+<ul>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Contact Us</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/organization/>Organization</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contributors/>Contributors</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/legal-notices/>Legal Notices</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/official-logos/>Official Logos</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/the-story-of-0ad/>The Story of 0 A.D.</a>
+</li>
+</ul>
+</div>
+<div>
+<h3>Follow Us</h3>
+<ul>
+<li>
+<a href=http://play0ad.bandcamp.com/ target=_blank>BandCamp</a>
+</li>
+<li>
+<a href=http://facebook.com/play0ad target=_blank>Facebook</a>
+</li>
+<li>
+<a href=https://www.instagram.com/play0ad.official/ target=_blank>Instagram</a>
+</li>
+<li>
+<a href=https://www.linkedin.com/company/345131/ target=_blank>LinkedIn</a>
+</li>
+<li>
+<a href=https://mastodon.social/@play0ad target=_blank>Mastodon</a>
+</li>
+<li>
+<a href=http://www.moddb.com/games/0-ad target=_blank>ModDB</a>
+</li>
+<li>
+<a href=https://www.reddit.com/r/0ad/ target=_blank>Reddit</a>
+</li>
+<li>
+<a href=https://twitter.com/play0ad target=_blank>Twitter</a>
+</li>
+<li>
+<a href=https://www.youtube.com/play0ad target=_blank>YouTube</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<footer>
+<ul>
+<li>
+<a href=http://wildfiregames.com/>Wildfire Games</a>
+</li>
+<li>
+<a href=http://creativecommons.org/licenses/by-sa/3.0/>this website content is released under CC-BY-SA</a>
+</li>
+</ul>
+</footer>
+<script src=https://gloviano.github.io/0ad-www-hugo/js/0ad.min.js></script>
+</body>
+</html>

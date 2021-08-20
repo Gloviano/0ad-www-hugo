@@ -1,0 +1,1123 @@
+<!doctype html><html lang=en prefix="og: http://ogp.me/ns#"><head><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=author content="0ad">
+<meta name=description content>
+<meta name=”theme-color” content="”#26203E">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DEV - 0 A.D. | A free, open-source game of ancient warfare">
+<meta property="og:description" content="0 A.D. is a free, open-source, historical Real Time Strategy (RTS) game currently under development by Wildfire Games, a global group of volunteer game developers.">
+<meta property="og:url" content="https://gloviano.github.io/0ad-www-hugo/pages/">
+<meta property="og:image" content="https://gloviano.github.io/0ad-www-hugo/">
+<meta property="og:image:secure_url" content="https://gloviano.github.io/0ad-www-hugo/">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content>
+<meta property="og:site_name" content="0ad">
+<meta property="article:published_time" content="0001-01-01T00:00:00Z">
+<meta property="article:modified_time" content="2021-08-20T02:27:56+0300">
+<meta property="article:author" content>
+<meta property="fb:app_id" content>
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:title content="DEV - 0 A.D. | A free, open-source game of ancient warfare">
+<meta name=twitter:description content="0 A.D. is a free, open-source, historical Real Time Strategy (RTS) game currently under development by Wildfire Games, a global group of volunteer game developers.">
+<meta name=twitter:site content="@play0ad">
+<meta name=twitter:image content="https://gloviano.github.io/0ad-www-hugo/">
+<meta name=twitter:creator content="@play0ad"><title>Pages - 0ad</title>
+<link rel=icon sizes=16x16 type=image/x-icon href=data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3AsHEhUUceI6KwAAAoFJREFUOMulk0tIlGEUhp//n4tzT8dxUCk0b6FdBrOLFySIQtpEiERUkBBFkNRGayFURG1SIrosapVB0SIikgq6WdBlYSJEG200NTVTs/EyM44z/qfFj5fRWvXBWXzv+b73nPOecxRA+I9jXArYLAZ8OU5KilJJS7Ggmsy8e9/L04/DRKLLYymLM9izLZVTB/OwJdnp+RmhtHwVXwemyc7zoI2McO5SK7cefltGIoDU7c+Rxw3FcrwqU+wWgzgcVul5UylOM2KxJEh97U4ZaauWq2fLZO7PXHCp2p4uzy6XSqkvad7h9a6Q3rd7xeM0zGMVFZvld8dJqTm0foHAaTfJ6yslUr0rPY7Z63XIUNs+8boMcfiZ05US6KsVu1m/q+W+ZMYmItx9MbikMo2p/gAxLR690PAITCaOHPABoK7LduHvnyIa0xWdM5OqMDYeRURQFimuaRqfPgxQtsWtt9FihJQkC401BcQ0BasZEswGBLCKxs36TWia4HZbSfTYMJqNuFIjGMP6BBinYzA0Os2N5n4MqoKqKCgKeJMt5KbZaLjXxWRYA6MKioFIROXO+Q386AnoBINjM6zJdzA4HIqrNRiOMjWt0dEdYCI0G+fL9RTR/EonUFvaR0h2J7C1wBU/HJoQm4khS4Zvd2kKk5NhHrTooqsDg0Fefg5QU7maRIc6/3BWE8aDUdQFCI/LyOHdmdx+0kd3b1AnALh+v4ug1U3DsXw25jr0DBQFEYhG9T76suxcO7GWvnGNi03+v+9C3dFCijMMjP4K09o5zo5CD8/bhsnPcJKeYqO9N0hjU+e/lwkga6UDX66LzHQHZlUIzWj4B0J88U/wfSi4bJH+AGfjCg6TIDefAAAAAElFTkSuQmCC>
+<link rel=stylesheet href=https://gloviano.github.io/0ad-www-hugo/css/style.min.css type=text/css>
+</head><body><header id=site-header>
+<div id=top-bar></div>
+<div id=bottom-bar>
+<picture id=logo>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/logo.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/logo.png alt="0 A.D Logo" width=355 height=168>
+</picture>
+<div id=logo-container>
+<p id=site-description>A free, open-source game of ancient warfare</p>
+</div>
+<div id=download-container>
+<a href=https://gloviano.github.io/0ad-www-hugo/download/>
+<div id=download-button>
+<div>
+<h3>Download</h3>
+<p>Alpha 25: Yaunā</p>
+</div>
+<picture id=download-arrow>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/download-arrow.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/download-arrow.png alt="Download 0 A.D." width=46 height=46>
+</picture>
+</div>
+</a>
+</div>
+<div id=donate-container>
+<div id=donate-button>
+<h3>Donate</h3>
+<p>Support the development of 0 A.D.</p>
+</div>
+</div>
+</div>
+</header>
+<nav id=main-nav>
+<ul>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/>Home</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/>News</a>
+</li>
+<li class=dropdown>
+Game Info
+<ul class=dropdown-content>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/project-overview/>Project Overview</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/download/>Download 0 A.D.</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/features/>Features</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/factions/>Factions</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/game-manual/>Game Manual</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Awards & Acclaim</a>
+</li>
+</ul>
+</li>
+<li class=dropdown>
+Media
+<ul class=dropdown-content>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Videos</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Screenshots</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Music</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Building Concepts</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Unit Concepts</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Wallpapers</a>
+</li>
+</ul>
+</li>
+<li class=dropdown>
+Community
+<ul class=dropdown-content>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Donate</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/participate/>Participate</a>
+</li>
+<li>
+<a href=https://wildfiregames.com/forum/ target=_blank>Forums</a>
+</li>
+<li>
+<a href="http://webchat.quakenet.org/?channels=0ad" target=_blank>IRC Channel</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/support/>Get Support</a>
+</li>
+<li>
+<a href=https://0ad.mod.io/ target=_blank>0 A.D. Mods</a>
+</li>
+</ul>
+</li>
+<li class=dropdown>
+About
+<ul class=dropdown-content>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Contact Us</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/organization/>Organization</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contributors/>Contributors</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/legal-notices/>Legal Notices</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/official-logos/>Official Logos</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/the-story-of-0ad/>The Story of 0 A.D.</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main>
+<article class=blog-entry>
+<header id=page-header class=center-text>
+<h1>0 A.D. Factions</h1>
+<picture id=header-stripes>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.png alt="0 A.D. Article Stripes" width=1000 height=8>
+</picture>
+<picture id=header-triangle>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.png alt="0 A.D. Article Triangle" width=62 height=62>
+</picture>
+</header>
+<div class=blog-info>
+<header>
+<p class=blog-date><time datetime=" 2021-08-18" pubdate=pubdate>August 18, 2021</time></p>
+<h2 class=blog-title><a href=https://gloviano.github.io/0ad-www-hugo/factions/>0 A.D. Factions</a></h2>
+<p class=blog-author>Written By Somebody</p>
+<ul class=blog-categories></ul>
+</header>
+<p class=blog-snippet></p>
+<a class=blog-read href=https://gloviano.github.io/0ad-www-hugo/factions/>Read this post</a>
+</div>
+<div id=page-content>
+<p><em><strong>Edit 2018-09-09</strong>: This content may be outdated. We hope to make a new website soon, which will be easier to maintain.</em></p>
+<p>The first edition of 0 A.D. will allow the player to control any of twelve ancient civilizations from the pre-common era. Each culture will be represented at the peak of its civilization, somewhere along the timeline of 500 B.C. to 1 B.C.</p>
+<p>Though a momentous task, we are working to ensure that each culture provides a unique yet balanced gameplay experience. Almost each civilization will have a unique set of buildings and units, and have notable strengths and weaknesses that must be learned and exploited by the player to be used effectively.</p>
+<hr>
+<h2 class=center id=the-carthaginian-empire>The Carthaginian Empire</h2>
+<p class=center><em>The sailors of Carthage were among the fiercest contenders on the high seas. The Punics were also masters of naval trade, extending their trade routes even beyond the pillars of Hercules and circumnavigating Africa. They deployed towered War Elephants on the battlefield to fearsome effect, and had defensive walls that could withstand years of siege.</em></p>
+<p>The Carthaginians, or Punics, were an ancient civilization centered on the Phoenician city-state of <strong>Carthage</strong>, located outside what is now Tunis, Tunisia. After gaining independence from Tyre, Carthage soon became a formidable force in the western Mediterranean, eventually taking over much of North Africa and modern-day Spain and becoming an economic powerhouse.</p>
+<p>Carthage’s ground forces were primarily made up of allied peoples and mercenaries, including Libyans, Numidians, Iberians and sometimes Greeks. Carthaginian citizens served in the ground forces almost exclusively as officers, and were only required to serve as infantry in special cases. By contrast, the Carthaginian navy was made up of Punic citizenry, heirs to the seafaring Phoenicians, and this undoubtedly contributed to Carthage going down in history as having one of the largest and strongest navies of ancient times.</p>
+<p>In 0 A.D. the Carthaginians will have many bonuses that match their historic strengths. These include:</p>
+<ul>
+<li>The widest selection of units: Because Carthage always relied on mercenaries to make up the bulk of their forces. The Carthaginians can build Iberian, Celtic, and Italian embassies, which are specialized barracks for mercenaries of these tribes.</li>
+<li>The strongest walls: Because of Carthage’s famous triple walls.</li>
+<li>The strongest navy: Because of the historical dominance of Carthage on the sea-lanes.</li>
+<li>More profitable trading: Because of the stranglehold Carthage had over trade in the Western Mediterranean.</li>
+<li>Special Buildings: Celtic Embassy, Iberian Embassy, Italiote Embassy (all of which train their respective mercenary units), Cothon (“Naval Shipyard”, constructs the mighty Carthaginian war fleet).</li>
+<li>Special Techs or Bonuses: Elephant Roundup (can capture wild elephants for a War Elephant training bonus), Exploration (greater vision range for ships and merchants), Colonization (Civic Centers, Temples, and Houses construct much faster).</li>
+<li>Wonder: Temple of Ba’al Ammon.</li>
+</ul>
+<p>(Sources: Israel Shatzman: A History of the Roman Republic (Hebrew); <a href=http://en.wikipedia.org/wiki/Ancient_Carthage target=_blank>English Wikipedia: Ancient Carthage</a>; <a href=http://en.wikipedia.org/wiki/Punic_Wars target=_blank>English Wikipedia: Punic Wars</a>, <a href=http://en.wikipedia.org/wiki/Punics target=_blank>English Wikipedia: Punics</a>. Thanks, Dor Ben-Ari!)</p>
+<hr>
+<h2 class=center id=the-celtic-tribes>The Celtic Tribes</h2>
+<h3 class=center id=britons-gauls>Britons, Gauls</h3>
+<p class=center><em>A nimble yet powerful assortment of tribes, the <strong>Britons</strong> and <strong>Gauls</strong> were the antithesis of the rigid organization of Rome. A fierce horde of woad-painted Celtic warriors charging across the plains was a fearsome sight. Can you lead from the hill forts and sacred groves to victory?</em></p>
+<p>The two Celtic factions in 0 A.D., the Britons and Gauls, are based on a group of tribal societies in Iron Age and Medieval Europe who spoke Celtic languages and shared similar ancestry, languages and culture. Over the first millenium BC, they spread from central Europe westward to modern-day France, Spain and the British isles.</p>
+<p>Tribal warfare appears to have been a regular feature in Celtic history, and they had a reputation as formidable head hunters. Celtic society had some female warriors, and they may have treated women more equally to men than other ancient cultures did. The Celtic priests, known as druids, carried out rites and sacrifices to their deities in remote areas such as hilltops, groves, and lakes.</p>
+<p>The Celts considered the bow and other ranged arms to be the weapons of cowards, and excelled in hand-to-hand combat. Though their wooden buildings were fast and inexpensive to build, they were also easier to destroy than their stone counterparts. These traits are all reflected in the gameplay in 0 A.D. Each of the two Celtic factions also features some unique characteristics:</p>
+<ul>
+<li>Shared Special Building: Rotary Mill (increases the food production of nearby farms).</li>
+<li>Shared Special Bonus: Iron Workers (because the Celts were the innovators of iron working, the Blacksmith building becomes available in the Village Phase at the start of the game).</li>
+<li>Shared Special Technologies: Druidic Conclave (Druides train twice as fast).</li>
+<li>The Britons have chariots, longswordsmen and powerful melee soldiers. Also, their heroes include Boudicca, queen of the Iceni, who led a revolt against the Roman Empire.</li>
+<li>Unique Special building: Kennel (trains War Dogs).</li>
+<li>Unique Special Techs and Bonuses: Woad Painting (greater attack and speed for melee units), Great Tower (stronger towers and fortresses).</li>
+<li>Wonder: White Horse of Uffington.</li>
+<li>The Gauls have heavy swordsmen and heavy cavalry. One of the Gauls’ heroes is Vercingetorix, chieftain of the Arverni tribe and enemy of Julius Caesar.</li>
+<li>Unique Special building: Tavern (trains “Naked Fanatic” champion infantry).</li>
+<li>Unique Special Techs and Bonuses: Woe to the Conquered (increased loot income), Carnutes (Druides gain an attack).</li>
+<li>Wonder: TBD.</li>
+</ul>
+<hr>
+<h2 class=center id=the-hellenic-states>The Hellenic States</h2>
+<h3 class=center id=athenians-spartans-macedonians>Athenians, Spartans, Macedonians</h3>
+<p class=center><em>Sparta, Athens and Macedonia are at your command. As the fore-bearers of philosophy, democracy, geometry, and Hellenistic art and architecture, their contributions to civil society were ever lasting. However, do not discount the strength of their stone structures, the resolve of a hoplite in phalanx formation, or their historic ability to steal victory against seemingly insurmountable odds.</em></p>
+<p>Greece, or <strong>“Hellas”</strong>, was one of the most vibrant and dominant cultures of the ancient world. Mostly organized in city states, the Hellenes developed advanced and sophisticated politics, art, architecture, scientific thought, literature, and philosophy. These aspects would later have a powerful influence on the Roman Empire and on Western Civilization at large. The Hellenes also stood out as a military force, and records show they often fought amongst themselves and against foreign enemies. Notably, under the leadership of Alexander the Great, Macedonian forces and allies took over most of the world they knew, including Egypt, Persia and parts of the Indian subcontinent, allowing a diffusion of Hellenic and eastern cultures for years to come.</p>
+<p>Each of the three Hellenic factions in 0 A.D., the <strong>Athenians</strong>, the <strong>Macedonians</strong> and the <strong>Spartans</strong>, features some unique characteristics along with shared technologies and buildings:</p>
+<ul>
+<li>Shared Special Building: Theatron (Theater).</li>
+<li>Shared Special Bonuses: Hellenization (construct a Theatron to expand the player’s territory significantly), Phalanx (a “shield wall” formation for Hoplite-style infantry that is very strong from the front).</li>
+<li>Shared Special Techs: Hoplitodromos (faster running and charging for Champions), Olympic Wrestling (greater health for Champions), Pankration (“Greek Martial Arts”, stronger attack for melee infantry, but longer train time), Othismos (Phalanx formation gains a “pushing” effect with greater attack).</li>
+<li>Receiving significant naval bonuses, the Athenians are the rulers of the waves. They can train marines from their triremes and can build their mighty stone walls through neutral territory after researching special technologies.</li>
+<li>Unique Special Buildings: Gymnaseion (trains champions and researches special techs), Prytaneion (“Council Chamber”, trains heroes, researches special techs).</li>
+<li>Unique Special Techs or Bonuses: Iphicratean Reforms (unlocks training of Athenian Marines and Cretan Archers from Triremes), Long Walls (City Walls can be built in neutral territory), Arsenal of Philon (warships regenerate health when near a dock), Zea Ship Sheds (warships build faster), Phidean Workshop (Temples and Parthenon build faster, but at greater cost).</li>
+<li>Wonder: Parthenon.</li>
+<li>The Macedonians span both the Greek (Hellenic) and Successor cultures and so benefit by having access to both the Hellenic and Successor Special Buildings and Technologies. They also have a wide variety of troops and siege weapons for a combined-arms approach.</li>
+<li>Unique Special Buildings: Siege Workshop (builds all siege engines).</li>
+<li>Unique Special Techs or Bonuses: Hellenistic Metropolis (part of their Successor culture, greater health and attack for Civic Centers), Military Reforms (when built, barracks spawn free units), Hellenic League (greater attack vs. Persians and Greeks, but lower attack vs. Romans), Syntagma Formation (a strong formation for pike units, part of their Successor culture).</li>
+<li>Wonder: Mausoleum of Halicarnassus.</li>
+<li>The Spartans can’t build stone walls, but as their soldiers are top-notch, their men serve as their walls instead. They have a -10% population penalty (e.g., 270 instead of 300), which makes them an underdog faction.</li>
+<li>Unique Special Building: Syssition (“Military Mess Hall”, trains Spartan heroes and mighty Spartiate hoplites).</li>
+<li>Unique Special Techs or Bonuses: The Agoge (Hoplites and Spartiates have much greater health), Feminine Mystique (Spartan women fight back and can build defenses), Phalanx Formation, Tyrtean Paeans (Hoplites and Spartiates move faster when in Phalanx Formation).</li>
+<li>Wonder: Sanctuary of Artemis.</li>
+</ul>
+<hr>
+<h2 class=center id=the-iberian-tribes>The Iberian Tribes</h2>
+<p class=center><em>The Iberians were fathers of the art of guerrilla warfare, capable of lightning strikes against an opponent, followed by an instant withdrawal. Beware their foot units, who not only move quickly but fire rapidly, particularly their Balearic Slingers. A number of their ranged units also had the unique ability to fire flaming missiles. Toledo steel grants them superior metal weaponry.</em></p>
+<p>Very little is known about the native <strong>Iberians</strong>, and the ancient Iberian language remains linguistically unclassified to this day.</p>
+<p>What little we do know from historical sources describing the Iberian tribes, however, is that they were not a warlike people; they did hire out mercenaries to other peoples, but they rarely themselves went to war. Organized as a loose confederation of tribes and cities, their economy subsisted of agriculture, metalworking and exporting metals.</p>
+<p>When under threat, however, Iberia did not lend itself easily to conquest. Not even the great Hannibal could accomplish the task, and it took the Romans 200 years. Part of this has to do with two distinct features of the way the Iberians waged war: One was the guerrilla war style of fighting they employed; in fact, the Iberians invented guerrilla warfare. The second was the strong fortifications they built, the oppidum (a fortified town) and the castro (a hill fort). (More info: <a href=http://en.wikipedia.org/wiki/Castro_culture target=_blank>Wikipedia: Castro culture</a> and <a href=http://en.wikipedia.org/wiki/Castros_in_Spain target=_blank>Wikipedia: Castros in Spain</a>).</p>
+<p>In 0 A.D., the Iberians will have many bonuses to match their historic strengths. These bonuses include:</p>
+<ul>
+<li>Elite Warriors: These can cause great damage with few numbers.</li>
+<li>Cavalry Cost: Because of the large horse herds and some of the finest horses in ancient Europe, the Iberians’ cavalry will cost less.</li>
+<li>Flaming Javelins: There was a frequent practice among some Iberian tribes of dousing their javelins in pitch. Javelin-using units will throw flaming javelins after researching this unique technology.</li>
+<li>Special Building: Revered Monument (attack bonus to nearby units).</li>
+<li>Special Techs or Bonuses: Horse Roundup (can capture wild horses for cavalry training bonuses), Flaming Javelins (greater attack against buildings for javelin units), Toledo Steel (greater attack for sword units).</li>
+<li>Wonder: TBD.</li>
+</ul>
+<hr>
+<h2 class=center id=the-mauryan-empire>The Mauryan Empire</h2>
+<p class=center><em>Founded in 322 B.C. by Chandragupta Maurya, the Mauryan Empire was the first to rule most of the Indian subcontinent, and was one of the largest and most populous empires of antiquity. Its military featured bowmen who used the long-range bamboo longbow, fierce female warriors, chariots, and thousands of armored war elephants. Its philosophers, especially the famous Acharya Chanakya, contributed to such varied fields as economics, religion, diplomacy, warfare, and good governance. Under the rule of Ashoka the Great, the empire saw 40 years of peace, harmony, and prosperity.</em></p>
+<p>The <strong>Mauryans</strong> originated in the kingdom of Magadha and were ruled by the Mauryan dynasty, founded by Chandragupta Maurya, between 322 BC and 185 BC. At the time, it dominated the Indian subcontinent and was one of the largest empires in the world.</p>
+<p>In 0 A.D. the Mauryans will have many bonuses that match their historic strengths. These include:</p>
+<ul>
+<li>Large Population: A +10% population cap bonus (e.g., 330 instead of 300, 275 instead of 250).</li>
+<li>Long-range Archery: Mauryan archers have the longest range of any archer unit in the game.</li>
+<li>Elephants: Access to 3 different elephant units, including the Armored War Elephant, Elephant Archer, and Worker Elephant, which acts like a mobile dropsite for resources. Wild Elephants are also capturable and give an elephant training bonus when tasked to the Elephant Stables.</li>
+<li>Special Building: Edict Pillar of Ashoka (increased gathering and health for nearby units). Elephant Stables (trains powerful elephant units).</li>
+<li>Special Techs or Bonuses: Emperor of Emperors (+10% Population Cap), Kṣhatriya Warrior Caste, Elephant Roundup (can capture wild elephants for a War Elephant training bonus), Archery Tradition (greater range and attack for archers), Wootz Steel (greater attack for sword units).</li>
+<li>Wonder: The Great Stupa of Sanchi, which houses a relic of the Great Buddha himself.
+(Sources: <a href=http://en.wikipedia.org/wiki/Maurya_Empire target=_blank>English Wikipedia: Maurya Empire</a>, <a href=http://en.wikipedia.org/wiki/Arthashastra target=_blank>English Wikipedia: Arthashastra</a>)</li>
+</ul>
+<hr>
+<h2 class=center id=the-achaemenid-persian-empire>The Achaemenid (Persian) Empire</h2>
+<p class=center><em>Cosmopolitan to the core, the Persian Empire levied a wide variety of troops from their vassal satrapies. Though their infantry were weak and poorly equipped, they could be massed in vast numbers. Their cavalry was strong and exotic yet expensive, and included the fearsome cavalry archer, camelry, mahout elephants, and scythed chariots. They were known for their lavish wealth, grand architecture and strong trade empire through the Silk Road.</em></p>
+<p>The <em>Persians</em> originated from the Pars province in the southern part of modern-day Iran. The Persian Empire, when ruled by the Achaemenid dynasty (ca. 550 BC–336 BC), was one of the greatest empires of antiquity, stretching at its zenith from the Indus Valley in the east, to Thrace and Macedon on the northeastern border of Greece.</p>
+<p>The Persians can be credited as the pioneers of empire-building of the Ancient World. Later empires, such as the Hellenistic and Roman empires, adopted many administrative innovations that the Persians had come up with. While taking over various peoples with different customs, laws, religions, languages, etc., the Persians imposed a centralized, bureaucratic administration under the emperor, with large, professional military and civil services.</p>
+<p>The ancient Persian army was largely comprised of national contingents from the various subject nations under the rule of the Great Kings. These contingents were organized along military/administrative lines and used a decimal system of organization by multiples of ten. Well-known national ‘regiments’ were: Medo-Persian, non-Medo-Persian Iranian, Lydian, Carian, Assyrian, Babylonian, Egyptian, Indian, Ethiopian, and Libyan.</p>
+<p>In 0 A.D. the Persians will have many bonuses that match their historic strengths. These include:</p>
+<ul>
+<li>Strong Archers and Cavalry: Persian archers are plentiful and have excellent range. They have access to all cavalry types from their Stables building.</li>
+<li>Excellent Land Trade: The best traders over land. The Persian Empire straddles the famous Royal Road and Silk Road trade routes.</li>
+<li>Strong Structures and Defenses: Persian buildings are very strong, but take longer to build.</li>
+<li>Special Building: Stables (to train cavalry), Apadana or “Palace” (trains heroes and Immortals).</li>
+<li>Special Techs or Bonuses: The Great King’s Levy (+10% population cap), Immortals (champion infantry train very fast), Equine Transports (triremes can train cavalry), Persian Architecture (greater health for all buildings), Roundup (can capture wild camels and horses for a training bonus for these types of units), Royal Road, Nisean War Horses (greater health for cavalry), Archery Tradition (greater range and attack for archers), Satrapy Tribute (Apadana gives a slow trickle of all resources).</li>
+<li>Wonder: Gate of All Nations.
+(Sources: <a href=http://en.wikipedia.org/wiki/Achaemenid_Empire target=_blank>English Wikipedia: Achaemenid Empire</a>; <a href=http://www.iranicaonline.org/articles/achaemenid-dynasty target=_blank>Encyclopaedia Iranica: Achaemenid Dynasty</a>)</li>
+</ul>
+<hr>
+<h2 class=center id=the-roman-republic>The Roman Republic</h2>
+<p class=center><em>Rome evolved from a republic in Latium to a great conquering imperial powerhouse, sweeping across Europe, the western shores of the Mediterranean and North Africa. The Romans were notable for their regimented military, powerful siege engines, broad range of naval vessels, politics, and adaptation to change.</em></p>
+<p>The <strong>Romans</strong> controlled the largest empire of the ancient world. Rising from a group of villages to controlling an empire stretching from southern Scotland to the Sahara Desert, Rome remained one of the strongest nations on earth for almost 800 years, controlling over 60 million inhabitants, one quarter of the Earth’s population at that time.</p>
+<p>Rome’s regime changed over time from a republican system to an autocratic empire. While the politicians seemed to be in control, the real power lay with the army. Indeed, war was the heart and soul of the Roman political system, affecting everything that the government did.</p>
+<p>Rome produced not only effective generals but formidable engineers. Today we owe many technological advances to the Romans, who were the supreme builders of the ancient world. Roads, massive buildings, and large mining and water movement projects were common. These inventions and more served to spread the Roman legacy that endures to this day, from language to medicine, from literature to government, and from legal codes to art, architecture and beyond.</p>
+<p>In 0 A.D. the Romans will have many bonuses that match their historic strengths. These include:</p>
+<ul>
+<li>Powerful infantry: Lots of technologies. Their Hastatus swordsman is the best swordsman in the game. They are severely lacking in the cavalry department though.</li>
+<li>Good siege equipment: The best siegers in the game. They have access to nearly all siege weapon types, and they can build siege walls and entrenched army camps in enemy territory.</li>
+<li>Excellent mining capabilities: They can research all technologies related to mining stone and metal.</li>
+<li>An excellent navy: On par with the Carthaginian and Ptolemaic naval forces, the Roman navy is one of the best in the game and has access to the Quinquereme heavy warship.</li>
+<li>Special Buildings: Siege Walls (can be built in neutral and enemy territory), Entrenched Army Camp (can be built in neutral and enemy territory and trains soldiers and siege weapons), Temple of Vesta (build one of these to prevent the capture of the player’s buildings as long as it exists).</li>
+<li>Special Techs or Bonuses: Roman Logistics (Army Camps and Siege Walls no longer decay), Sibylline Books (greater vision for units and buildings), Marian Reforms (unlock the Marian Legionnaire), Testudo Formation (a slow formation that is nearly impervious to ranged attacks), Citizenship (armor bonus for fighting in home territory), Socii (allies gain armor bonuses when fighting in Roman territory).</li>
+<li>Wonder: Temple of Jupiter Optimus Maximus.</li>
+</ul>
+<p>While the Romans may not specialize extremely well in specific areas, they are one of the most well-rounded civilizations in 0 A.D.[/wptabcontent]</p>
+<hr>
+<h2 class=center id=the-diadochi-successor-states>The Diadochi (Successor) States</h2>
+<h3 class=center id=macedonians-seleucids-ptolemies>Macedonians, Seleucids, Ptolemies</h3>
+<p class=center><em>The dissolution of Alexander’s Empire saw the rise of three chief successor states: The Seleucids in Syria and the Middle East, the Ptolemies in Egypt and Palestine, and the Macedonians in Greece. These states lasted as independent kingdoms for over 200 years until their absorption by the ever-growing Roman Republic. In that time, the Successors fought each other constantly, vying for expansion or glory.</em></p>
+<p>When Alexander the Great died (June 10, 323 BC), he left behind a huge empire which was composed of many essentially independent territories. Alexander’s empire stretched from his homeland of Macedon itself, along with the Greek city-states that his father had subdued, to Bactria and parts of India in the east. It included Anatolia, the Levant, Egypt, Babylonia, and Persia.</p>
+<p>The Diadochi (plural of Latin Diadochus, from Greek: Διάδοχοι, Diadokhoi, “Successors”) were the rival generals, family and friends of Alexander the Great who fought for the control of Alexander’s empire after his death. The Wars of the Diadochi were the turbulent opening of the Hellenistic period.</p>
+<p>After thirty years of successive wars, three chief kingdoms emerged from the ashes of Alexander’s empire: Macedon, Seleucid Syria, and Ptolemaic Egypt. These large and very powerful kingdoms also contended with many other tribes, kingdoms, empires, and states, such as Rome, Epirus, Mauryan India, Parthia, Pergamon, Rhodes, Thrace, Sparta, Athens, The Achaean League, the Aetolian League, and rampaging Gallic tribes known as Galatians.</p>
+<ul>
+<li>Shared Special Building: Library.</li>
+<li>Shared Special Techs and Bonuses: Hellenistic Metropolis (greater health and attack for Civic Centers), Syntagma Formation (a pike formation that is nearly invulnerable from the front), Pankration (“Greek Martial Arts”, stronger attack for melee infantry, but longer train time).</li>
+<li>The Macedonians span both the Greek (Hellenic) and Successor cultures and so benefit by having access to both the Hellenic and Successor Special Buildings and Technologies. They also have a wide variety of troops and siege weapons for a combined-arms approach.</li>
+<li>Unique Special Buildings: Siege Workshop (builds all siege engines), Theatron (part of their Hellenic culture bonus).</li>
+<li>Unique Special Techs or Bonuses: Military Reforms (when built, barracks spawn free units), Hellenic League (greater attack vs. Persians and Greeks, but lower attack vs. Romans), Hellenization (construct a Theatron to expand the player’s territory significantly), Phalanx (a “shield wall” formation for Champion Infantry that is very strong from the front).</li>
+<li>Wonder: Mausoleum of Halicarnassus.</li>
+<li>The successors in the East, the Seleucids combine Hellenism and Orientalism into one Hellenistic culture. They have access to Macedonian-style heavy infantry and Eastern-style light infantry and cavalry, including cataphracts, armored Indian war elephants, and scythe chariots.</li>
+<li>Unique Special Building: Klēroukhia Military Colony (replaces the Civic Center as the buildable expansion building and trains “Settler” units).</li>
+<li>Unique Special Techs or Bonuses: Traditional Army/Reform Army (unlock different Champions), Marriage Alliance (purchase 20 Indian War Elephants), Parade of Daphne (faster batch training at the Fortress), Nisean War Horses (greater health for all cavalry).</li>
+<li>Wonder: The Paradise of Daphne.</li>
+<li>An excellent navy and monumental architecture are hallmarks of the Ptolemies. Their “mercenary” soldiers are expensive, but powerful. Their “native” Egyptian soldiers are cheap and plentiful.</li>
+<li>Unique Special Buildings: Lighthouse (reveals all of the shorelines on the map), Mercenary Camp (trains all mercenary units).</li>
+<li>Unique Special Techs or Bonuses: Pharaonic Cult (hero auras boosted), Nile Delta (three additional farming techs not available to other factions), Roundup (can capture camels and elephants for training bonuses).</li>
+<li>Wonder: Temple of Edfu.</li>
+<li>The Successors share many traits in common, but are very unique factions to play, given their wide geographic distribution, unique heroes, and mix of economic and military bonuses.</li>
+</ul>
+<hr>
+<p>In future Expansion Packs, we hope to expand the number of available cultures by incorporating additional civilizations from 1 A.D. to 500 A.D. Possible civilizations include the Germanics, Vandals, Sarmatians, Late Rome, Imperial Rome, Eastern Rome (Early Byzantines), Saxons, Parthians, Huns, Dacians, and the Goths.</p>
+</div>
+</article>
+<article class=blog-entry>
+<header id=page-header class=center-text>
+<h1>0 A.D. Features</h1>
+<picture id=header-stripes>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.png alt="0 A.D. Article Stripes" width=1000 height=8>
+</picture>
+<picture id=header-triangle>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.png alt="0 A.D. Article Triangle" width=62 height=62>
+</picture>
+</header>
+<div class=blog-info>
+<header>
+<p class=blog-date><time datetime=" 2021-08-18" pubdate=pubdate>August 18, 2021</time></p>
+<h2 class=blog-title><a href=https://gloviano.github.io/0ad-www-hugo/features/>0 A.D. Features</a></h2>
+<p class=blog-author>Written By Somebody</p>
+<ul class=blog-categories></ul>
+</header>
+<p class=blog-snippet></p>
+<a class=blog-read href=https://gloviano.github.io/0ad-www-hugo/features/>Read this post</a>
+</div>
+<div id=page-content>
+<p><strong>0 A.D.</strong> (pronounced “zero ey-dee”) is a free real-time strategy (RTS) game of ancient warfare. Lead a civilization set in the imaginary year of 0 A.D., develop a thriving city, raise a mighty army and contend with rivals for hegemony of the world. History is yours for the taking!</p>
+<p>Check out some of the most <strong>exciting features</strong> in 0 A.D.:</p>
+<h2 id=intense-gameplay>Intense Gameplay</h2>
+<ul>
+<li><strong>Cross-platform</strong>: 0 A.D. is set to run on Windows, Linux and OS X.</li>
+<li><strong>Unique civilizations</strong>: In 0 A.D. each civilization is unique in its appearance and gameplay, including units, structures, and technology trees.</li>
+<li><strong>Citizen soldiers</strong>: Some infantry and cavalry units can not only fight, but also gather resources and construct buildings, making them substantially more versatile than in typical RTS games.</li>
+<li><strong>Combat experience matters</strong>: The more time your citizen soldiers spend fighting your enemies, the higher they go up the ranks. With each rank, they become stronger, but they also get worse at civilian tasks.</li>
+<li><strong>Technology tradeoffs</strong>: Some technologies are arranged in pairs, and within each pair, you can only research one technology at most in each game. This choice is irreversible, so choose carefully!</li>
+<li><strong>Unit formations</strong>: Arrange your units in historical battle formations from the Phalanx to the Testudo and gain bonuses, such as increased armor. However, beware the costs that may come with them, such as lower speed! (As of August 2012, this feature has not been implemented yet.)</li>
+</ul>
+<h2 id=realism-and-authenticity>Realism and Authenticity</h2>
+<ul>
+<li><strong>Real world map realism</strong>: Random maps are based upon real geography of the ancient world with realistic plants, animals and terrain.</li>
+<li><strong>Authentic historical details</strong>: Designs of units, buildings and technologies all reflect the hallmarks of each civilization. We even give them names in the original ancient Greek, Latin, Punic, Celtic, etc.</li>
+<li><strong>Planned lifelike naval warfare</strong>: Ships will be on a much larger and more lifelike scale than seen in other games. They will move more realistically and even be able to ram other ships.</li>
+</ul>
+<h2 id=make-the-game-your-own>Make the game your own</h2>
+<ul>
+<li><strong>Translation and locale support</strong>: Play 0 A.D. in over a dozen languages.</li>
+<li><strong>Powerful map editor</strong>: Draw landscapes with a palette of hundreds of terrains, build majestic cities and set the position of the sun in the Atlas Editor, your tool to design intricately detailed maps in 0 A.D.</li>
+<li><strong>Excellent moddability</strong>: From new computer opponent behaviors to extra civilizations, easily create your own modifications (mods) of 0 A.D. by editing game files, all freely available in standard, open formats.</li>
+</ul>
+</div>
+</article>
+<article class=blog-entry>
+<header id=page-header class=center-text>
+<h1>0 A.D. Game Manual</h1>
+<picture id=header-stripes>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.png alt="0 A.D. Article Stripes" width=1000 height=8>
+</picture>
+<picture id=header-triangle>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.png alt="0 A.D. Article Triangle" width=62 height=62>
+</picture>
+</header>
+<div class=blog-info>
+<header>
+<p class=blog-date><time datetime=" 2021-08-18" pubdate=pubdate>August 18, 2021</time></p>
+<h2 class=blog-title><a href=https://gloviano.github.io/0ad-www-hugo/game-manual/>0 A.D. Game Manual</a></h2>
+<p class=blog-author>Written By Somebody</p>
+<ul class=blog-categories></ul>
+</header>
+<p class=blog-snippet></p>
+<a class=blog-read href=https://gloviano.github.io/0ad-www-hugo/game-manual/>Read this post</a>
+</div>
+<div id=page-content>
+<h2 id=game-objectives-and-rules>Game Objectives and Rules</h2>
+<p>In a nutshell, in <strong>0 A.D.</strong>, you start out with three things:</p>
+<ul>
+<li><strong>Buildings</strong>, such as civic centers,</li>
+<li><strong>Units</strong>, such as female citizens and male soldiers, that you can move around the map and use to gather resources, build or fight, and</li>
+<li>Some initial amounts of four <strong>resources</strong>: Food, Wood, Stone and Metal.</li>
+</ul>
+<p>In 0 A.D., you need to gather more of these four resources, and then use them to train (create) various units at your buildings. In turn, you will need to put some of the new units to work gathering more resources and building more types of buildings. In this way, you build a strong economy with a constant income stream of all four resources, and prepare for building a strong military.</p>
+<p>As soon as possible, you need to train a large, powerful army, that can even include siege weapons and war ships. Training each of these military units costs the resources you gathered.</p>
+<p>Ultimately, you will send off your army to battle in an attempt to destroy all your enemies’ structures that can generate units, and all units that can construct buildings. The first player that achieves this goal, wins.</p>
+<hr>
+<h2 id=user-interface-basics>User Interface Basics</h2>
+<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
+<iframe src=https://www.youtube-nocookie.com/embed/xxs4-6gHKpw style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="0 A.D. Tutorial 1: Basic Controls"></iframe>
+</div>
+<p>The following inputs affect what happens on screen:</p>
+<ul>
+<li><strong>Selecting objects</strong>: Left-click to select an object, such as a building or a unit. (Notice an outline appears on the ground at the base of the selected object.) You can select many objects at once by dragging the mouse.</li>
+<li><strong>Tasks</strong>: If you right-click when a unit is selected, you tell it to do something. If you right-click an empty piece of ground: the unit will move there; right-click an enemy unit: it will attack it; right-click a tree, it will chop it to gather wood, etc.</li>
+<li><strong>Moving the camera</strong>: Move the mouse towards an edge of the screen to move the camera in that direction and see more of the game world. Also: You can press the arrow keys (or the w, a, s or d keys) to move the camera.</li>
+<li><strong>Rotate map</strong>: Either with Shift + Mouse wheel rotation, or with the Q and E keys.</li>
+</ul>
+<p><strong>Further reading</strong>
+A full list of hotkeys is on the 0 A.D. Development Wiki.</p>
+<hr>
+<h2 id=gathering-resources>Gathering Resources</h2>
+<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
+<iframe src=https://www.youtube-nocookie.com/embed/QRF53HLElCc style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="0 A.D. Tutorial 2: Resources"></iframe>
+</div>
+<p>The sum of all resources on the map is limited. These resources can be gathered in several ways:</p>
+<ul>
+<li><strong>Food</strong>: Foraging from bushes and certain trees; Hunting certain wild animals or slaughtering livestock, such as chickens and sheep; Fishing; Farming.</li>
+<li><strong>Wood</strong>: Chopping down trees.</li>
+<li><strong>Stone</strong>: Mining from stone mines.</li>
+<li><strong>Metal</strong>: Mining from metal mines. (These occasionally sparkle, to make them easier to tell apart from stone mines.)
+(On certain maps, you can also quickly gather a great deal of resources from special treasures found on the map, such as shipwrecks.)</li>
+</ul>
+<h3 id=shuttling-to-dropsites>Shuttling to Dropsites</h3>
+<p>When units gather a resource, there is only so much they can carry. Then they need to shuttle the resources they have gathered to a building that serves as their resource dropsite and drop it off there. Only then can they return to gather more resources.</p>
+<ul>
+<li><strong>Civic centers</strong> and <strong>docks</strong> serve as dropsites for all four resources.</li>
+<li><strong>Mills</strong> serve as dropsites for wood, stone and metal only.</li>
+<li><strong>Farmsteads</strong> serve as dropsites for food.</li>
+</ul>
+<p>Units automatically shuttle the resources they have been gathering to the nearest dropsite that can accept it. It might be a good idea to build dropsites near their corresponding resources, to make sure your gathering units only have to shuttle short distances, which makes gathering more efficient.</p>
+<hr>
+<h2 id=training-units>Training Units</h2>
+<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
+<iframe src=https://www.youtube-nocookie.com/embed/2nIQKw02xVE style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="0 A.D. Tutorial 3 - Units"></iframe>
+</div>
+<p>Most buildings in 0 A.D. can train (create) units. If you select a building, you can see in the bottom right panel what types of units can be trained at that building, and how much each type costs.</p>
+<h3 id=population>Population</h3>
+<p>Every new unit counts toward your <strong>population</strong> limit, indicated on the top left of your screen. The limit can be increased, by building more buildings such as houses.</p>
+<h3 id=rally-points>Rally Points</h3>
+<p>If you select a building and then right-click a spot on the ground, you will create a <strong>rally point</strong>, which is a destination each new unit created from that building will automatically go to. Rally points can be set on resources, so that units will automatically gather that type of resource when they are created.</p>
+<hr>
+<h2 id=working-with-units>Working with Units</h2>
+<p>Units in 0 A.D. can be placed on a continuum from “civilian-only”, which are almost exclusively used for accumulating resources, to “military-only”, which can only fight. In the middle, the game features a wide variety of citizen soldiers, which can do a little bit of both.</p>
+<h3 id=female-citizens>Female Citizens</h3>
+<p>You usually start out a game with a few <strong>female citizens</strong>, who are the driving force of your economy. They specialize in gathering resources, particularly Food, by foraging and farming more efficiently than other units. They can also build civic buildings, such as resource dropsites, and cause nearby male units to work faster. Although they can attack enemy units, they are very vulnerable to practically any other unit.</p>
+<h3 id=citizen-soldiers>Citizen soldiers</h3>
+<p>Some units have the dual role of both workers and soldiers, meaning they are <strong>citizen soldiers</strong>. For example, hoplites can not only fight but also chop wood. Citizen Soldiers have bonuses for gathering wood, stone and metal. Certain buildings, such as fortresses, can only be built by citizen soldiers.</p>
+<h3 id=ranks>Ranks</h3>
+<p>The more citizen soldiers fight, the more battle experience they gain, and automatically go up the <strong>ranks</strong>. With each rank, they become stronger, and don a unique appearance, but also get gradually worse at “civilian” tasks, such as gathering resources.</p>
+<h3 id=champions-and-heroes>Champions and Heroes</h3>
+<p>You may also train <strong>champion units</strong>, which are more expensive than citizen soldiers and cannot do any task but fight, but are stronger and better at fighting. You can also train exactly one hero in a game, which is a very strong unique unit.</p>
+<hr>
+<h2 id=exploring-the-map>Exploring the Map</h2>
+<h3 id=shroud-of-darkness>Shroud of Darkness</h3>
+<p>You begin with only a small portion of the map revealed to you; The rest is covered in black. This black cover is called the <strong>Shroud of Darkness</strong>, and it may be hiding your enemies’ base, useful resources and more. The shroud is gradually removed and the map is gradually revealed when you send units to explore new parts of the map.</p>
+<h3 id=fog-of-war>Fog of War</h3>
+<p>Areas that you have explored, but currently do not have any units or buildings in them, appear with a grey shading covering them. This is the <strong>Fog of War</strong>. Even if things change on the map, under the Fog of War you you will only see objects as they were when your units or buildings last “saw” them. For example, if trees are cut down or a new enemy building is built under the Fog of War, you won’t see the change unless you send a unit there again. Importantly, enemy units are not seen at all under the Fog of War.</p>
+<p>If you have allies, you can see whatever parts of the map your allies have explored and vice versa.</p>
+<h3 id=gathering-intelligence>Gathering Intelligence</h3>
+<p>When exploring the map, you should be trying to find:</p>
+<ul>
+<li>Treasures,</li>
+<li>Resources,</li>
+<li>Strategic areas on the map, such as river crossings,</li>
+<li>The location of your enemies’ bases,</li>
+<li>How fortified your enemies’ bases are,</li>
+<li>What sort of military units they have been training,</li>
+<li>and more.</li>
+</ul>
+<p>All of this information can help you make the decisions that will make you victorious, such as the best direction to expand your base, and the types of units you should be training to counter your adversary.</p>
+<hr>
+<h2 id=dynamic-territories>Dynamic Territories</h2>
+<div style=position:relative;padding-bottom:56.25%;height:0;overflow:hidden>
+<iframe src=https://www.youtube-nocookie.com/embed/ya5-tN1PV4Y style=position:absolute;top:0;left:0;width:100%;height:100%;border:0 allowfullscreen title="0 A.D. Tutorial 4 - Territories and Buildings"></iframe>
+</div>
+<p>Most buildings can only be built within your own <strong>territory</strong>, marked by colored borders on the ground. Players can expand their territory by constructing buildings near their borders. (Some types of buildings will expand your territory more than others.) Borders may change throughout the game, based upon the buildings built and destroyed by the players.</p>
+<p>If one of a player’s buildings falls into enemy territory due to shifting borders, then the building will slowly lose loyalty until finally converting to the enemy’s side. This can be stopped and slowly reversed if the border shifts and the building comes back to the player’s side.</p>
+<h3 id=important-exceptions>Important Exceptions</h3>
+<p>There are a few important exceptions to this rule:</p>
+<ul>
+<li><strong>Outposts</strong>, <strong>Docks</strong> and Roman <strong>Entrenched Army Camps</strong> can be built outside your borders, but none of these will gain you new territory;</li>
+<li>The <strong>Civil Center</strong> can be built either on your territory or on unclaimed territory, but must be built a certain distance away from your existing civil centers. Building a civil center can gain you lots of extra territory. Moreover, as you progress through different phases of the game (see “Technologies and Game Phases”), the territory controlled by your Civic Centers will expand by a small amount.</li>
+</ul>
+<p>Docks do not lose loyalty/health outside your territory, but Outposts and Roman Entrenched Army Camps do. Roman Entrenched Army Camps can also be built in enemy territory.</p>
+<hr>
+<h2 id=technologies-and-phases>Technologies and Phases</h2>
+<h3 id=technologies>Technologies</h3>
+<p>Technologies, or techs, are economic or military bonuses that can be “researched” (bought) for resources at designated buildings. Hover over the technology buttons to learn about the costs and benefits of each technology.</p>
+<p>In 0 A.D., some technologies come in mutually exclusive pairs: This means that within each pair, you can either research one technology or the other, but not both in the same game. These technology pairs are represented on your screen by a link symbol “connecting” two buttons.</p>
+<h3 id=phases>Phases</h3>
+<p>0 A.D. describes the progression of a city from humble beginnings to greatness in three phases: the <strong>Village Phase</strong>, the <strong>Town Phase</strong>, and the <strong>City Phase</strong>. When the game starts, you are already in the Village Phase. If you want to progress to the Town and City Phases, you need to research each of these at the Civic Center.</p>
+<p>Phases are like technologies, but much more valuable, because by reaching a new phase you unlock many new types of buildings, units and technologies. Researching each phase is not only expensive but also requires you to have constructed certain buildings:</p>
+<ul>
+<li>Advancing to the <strong>Town Phase</strong> costs 500 Food, 500 Wood, and requires having built five buildings of any type, except palisades and farm fields. (Five houses, for example, are sufficient, and so are three houses, a mill and a farmstead.)</li>
+<li>Advancing to the <strong>City Phase</strong> costs 1000 Stone and 1000 Metal, and requires having built four buildings of any type that becomes available in the Town Phase (except Walls and Civ Centers).</li>
+</ul>
+<hr>
+<h2 id=combat>Combat</h2>
+<h3 id=types-of-combat-units>Types of Combat Units</h3>
+<p>With a few exceptions, all combat units belong to one of these types:</p>
+<ul>
+<li><strong>Infantry</strong>: Warriors fighting on foot, with swords, bows and arrows, etc.,</li>
+<li><strong>Cavalry</strong>: Warriors on horseback,</li>
+<li><strong>Siege weapons</strong>, such as catapults, and</li>
+<li><strong>War ships</strong>, such as triremes.</li>
+</ul>
+<h3 id=melee-vs-ranged-units>Melee vs. Ranged Units</h3>
+<p>Some of the units mentioned here are <strong>melee units</strong>, which can only fight when very close to the enemy (e.g., with a sword); Others are <strong>ranged units</strong>, which shoot or throw a weapon from afar, so they only need to get close enough to be within range (but not too close). Each of these types has its advantages and disadvantages. For example, some ranged units may be very powerful against certain melee units from a distance, but helplessly vulnerable to melee attack from up close.</p>
+<h3 id=types-of-damage-and-balancing>Types of Damage and Balancing</h3>
+<p>Damage in 0 A.D. comes in three types: <strong>hack</strong>, <strong>pierce</strong> and <strong>crush</strong>. Units have different armor for each type. In addition, unit attacks may be of multiple types simultaneously, e.g., a hoplite does both pierce and hack damage.</p>
+<p>On top of this, some units have special bonuses against particular other units, e.g., spearmen defeat melee cavalry, but are countered by skirmishers and cavalry archers.</p>
+<p>Consider that different units have different movement speeds, firing rates, hit points and costs, and you get a complex game with many strategic choices to make when choosing how to spend your resources. In-game documentation can be found in each unit’s description when hovering above the button to train it.</p>
+<hr>
+<h2 id=trade-and-bartering>Trade and Bartering</h2>
+<h3 id=trade>Trade</h3>
+<p>Trading allows you to gain resources simply by having your traders shuttle between markets or docks. Traders that travel over land can be trained at markets, and merchant ships that sail over sea can be trained at the dock.</p>
+<p>(The following explanation refers to both markets and docks; “Market” is used for brevity.)</p>
+<p>Establish a trade route between two markets by selecting a trader and right-clicking two markets one after another, setting them as “origin” and “destination” markets. Your traders will then start shuttling between them, gaining resources for every round trip made; You can choose which resource will be gained by each trader. The longer time it takes to travel between the two markets, the more of that resource you will get at the end of each round trip.</p>
+<p>You can have a trader shuttle between two of your own markets, or between your market and an allied market. The latter case yields more resources per trip than the former.</p>
+<h3 id=bartering>Bartering</h3>
+<p>Bartering allows you to buy and sell resources in exchange for other resources at the market. Resources are traded at exchange rates that vary with each deal. For example, to purchase 100 Food, you may initially have to spend 100 points of another resource type (Wood, Stone, or Metal). By the next deal, however, Food will become more expensive. The rates are global, so if another player buys Food it will be more expensive for you as well. Over time, the exchange rate gradually resets to the default rate.</p>
+</div>
+</article>
+<article class=blog-entry>
+<header id=page-header class=center-text>
+<h1>0 A.D. Project Overview</h1>
+<picture id=header-stripes>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.png alt="0 A.D. Article Stripes" width=1000 height=8>
+</picture>
+<picture id=header-triangle>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.png alt="0 A.D. Article Triangle" width=62 height=62>
+</picture>
+</header>
+<div class=blog-info>
+<header>
+<p class=blog-date><time datetime=" 2021-08-18" pubdate=pubdate>August 18, 2021</time></p>
+<h2 class=blog-title><a href=https://gloviano.github.io/0ad-www-hugo/project-overview/>0 A.D. Project Overview</a></h2>
+<p class=blog-author>Written By Somebody</p>
+<ul class=blog-categories></ul>
+</header>
+<p class=blog-snippet></p>
+<a class=blog-read href=https://gloviano.github.io/0ad-www-hugo/project-overview/>Read this post</a>
+</div>
+<div id=page-content>
+<p><strong>0 A.D.</strong> (pronounced “zero-ey-dee”) is a free, open-source, historical Real Time Strategy (RTS) game currently under development by Wildfire Games, a global group of volunteer game developers. As the leader of an ancient civilization, you must gather the resources you need to raise a military force and dominate your enemies.</p>
+<h2 class=center id=history-is-yours-for-the-taking>History is Yours for the Taking</h2>
+<p class=center><picture class=article-picture>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/project-overview/0ad-overview-1.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/project-overview/0ad-overview-1.png alt="0 A.D. Project Overview 1" width=150px height=auto>
+</picture></p>
+<p><strong>“0 A.D.” is a time period that never actually existed:</strong> In the usual calendar, one goes from 1 B.C. to 1 A.D. and skips zero. This reflects the historical fiction in the game: Who would have won if all the factions were pitted against each other when each of them was at its prime?</p>
+<p>We intend to portray some of the major civilizations over the millennium of 500 B.C. to 500 A.D. (Hence the midpoint, zero.) That is an ambitious prospect, so in the first edition of 0 A.D. we focus on the last five centuries B.C. Perhaps in future expansion packs, more civilizations will be added, along with additional gameplay features.</p>
+<p>We put a strong emphasis on historical accuracy while developing 0 A.D. We plan all our units and all our buildings based on reconstructions of how the units and the buildings might have looked like in the ancient world. We even name them in the original languages, such as Greek and Latin. But it’s worth remembering that any game should be fun to play, so, in many cases, we preferred playability over historical accuracy.</p>
+<h2 class=center id=0-ad-is-free-of-charge>0 A.D. is Free of Charge</h2>
+<p class=center><picture class=article-picture>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/project-overview/0ad-overview-2.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/project-overview/0ad-overview-2.png alt="0 A.D. Project Overview 2" width=150px height=auto>
+</picture></p>
+<p>0 A.D. is completely downloadable at no cost and always will be. No “freemium” model, no in-game advertising, no catch. This is our iron-clad guarantee.</p>
+<p>Although you might find some people selling copies of 0 A.D. on physical media, remember, you will always have the option to download 0 A.D. gratis on the internet, directly from the developers.</p>
+<h2 class=center id=0-ad-is-free-as-in-freedom>0 A.D. is Free as in “Freedom”</h2>
+<p class=center><picture class=article-picture>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/project-overview/0ad-overview-3.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/project-overview/0ad-overview-3.png alt="0 A.D. Project Overview 3" width=150px height=auto>
+</picture></p>
+<p>0 A.D. is freely licensed software, because we believe everyone should have access to great games, and that everyone can learn from developing them. You can redistribute and modify the game as long as you abide by the <a href=http://www.gnu.org/licenses/gpl-2.0.html target=_blank>GPL</a>. And you can even use parts of the art and sound for your own projects as long as you abide by <a href=http://creativecommons.org/licenses/by-sa/3.0/ target=_blank>CC BY-SA</a>.</p>
+<h2 class=center id=0-ad-is-still-under-development>0 A.D. is Still Under Development</h2>
+<p class=center><picture class=article-picture>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/project-overview/0ad-overview-4.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/project-overview/0ad-overview-4.png alt="0 A.D. Project Overview 4" width=150px height=auto>
+</picture></p>
+<p>Work on 0 A.D. began in 2001, first as a mod concept for Age of Empires II: The Age of Kings. In 2003 development moved to a standalone game with its own engine, Pyrogenesis. In 2009-2010, the game was released as free, open-source software and and much of the codebase was rewritten. <a href=/the-story-of-0ad/>Learn more about the story of 0 A.D.</a></p>
+<p>Currently, 0 A.D. is still in alpha phase, which means an early experimental phase. It is playable, and you can already download and test the game, but some features are still missing. When will 0 A.D. be released? It is very hard to predict. Even after we are done implementing all the features, we will want to conduct extensive beta testing, which can take a while. Information about release dates will be released at the appropriate time.</p>
+</div>
+</article>
+<article class=blog-entry>
+<header id=page-header class=center-text>
+<h1>Contact Us</h1>
+<picture id=header-stripes>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.png alt="0 A.D. Article Stripes" width=1000 height=8>
+</picture>
+<picture id=header-triangle>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.png alt="0 A.D. Article Triangle" width=62 height=62>
+</picture>
+</header>
+<div class=blog-info>
+<header>
+<p class=blog-date><time datetime=" 2021-08-18" pubdate=pubdate>August 18, 2021</time></p>
+<h2 class=blog-title><a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Contact Us</a></h2>
+<p class=blog-author>Written By Somebody</p>
+<ul class=blog-categories></ul>
+</header>
+<p class=blog-snippet></p>
+<a class=blog-read href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Read this post</a>
+</div>
+<div id=page-content>
+<h2 id=i-have-a-technical-problem-with-0-ad>I have a technical problem with 0 A.D.!</h2>
+<ul>
+<li>
+<p>We’re sorry you’ve been running into problems with 0 A.D.</p>
+</li>
+<li>
+<p>It’s a work in progress, so it can be buggy sometimes.</p>
+</li>
+<li>
+<p><strong>Please read the support page to find ways for us to try to figure it out together.</strong></p>
+</li>
+</ul>
+<hr>
+<h2 id=i-want-to-help-out>I want to help out!</h2>
+<p>Great! Thanks! Please read the following:</p>
+<ul>
+<li>
+<p>If you would like to <strong>help program the game</strong>, you’re invited to get your feet wet and get involved. No applications necessary.</p>
+</li>
+<li>
+<p>If you would like to <strong>join the project in any capacity <em>besides</em> programming</strong>, we welcome your applications here. We are looking for visual artists (2d and 3d), animators, sound artists, technical writers, video editors and more.</p>
+</li>
+<li>
+<p><strong>If you want to translate 0 A.D. into your own language (e.g., French, Spanish, Italian, Portuguese, …)</strong>: Please see the Localization page on our wiki for more information..</p>
+</li>
+</ul>
+<hr>
+<h2 id=i-have-something-else-to-say>I have something else to say!</h2>
+<ul>
+<li>If you have something to say or ask that <strong>is not covered above</strong>, you are invited to email <strong>webmaster</strong>, which is <strong>at wildfiregames dot com</strong>.</li>
+</ul>
+</div>
+</article>
+<article class=blog-entry>
+<header id=page-header class=center-text>
+<h1>Contributors</h1>
+<picture id=header-stripes>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.png alt="0 A.D. Article Stripes" width=1000 height=8>
+</picture>
+<picture id=header-triangle>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.png alt="0 A.D. Article Triangle" width=62 height=62>
+</picture>
+</header>
+<div class=blog-info>
+<header>
+<p class=blog-date><time datetime=" 2021-08-18" pubdate=pubdate>August 18, 2021</time></p>
+<h2 class=blog-title><a href=https://gloviano.github.io/0ad-www-hugo/contributors/>Contributors</a></h2>
+<p class=blog-author>Written By Somebody</p>
+<ul class=blog-categories></ul>
+</header>
+<p class=blog-snippet></p>
+<a class=blog-read href=https://gloviano.github.io/0ad-www-hugo/contributors/>Read this post</a>
+</div>
+<div id=page-content>
+<p>0 A.D. is a collaborative project developed by Wildfire Games, a group of contributors from all over the world.</p>
+<p>The full list of past and current contributors to 0 A.D. can be found in the game, by clicking the Credits button in the main menu. You can browse the corresponding files containing the list of contributors here: <a href=https://trac.wildfiregames.com/browser/ps/trunk/binaries/data/mods/public/gui/credits/texts target=_blank>Credits files.</a></p>
+<p>If you have contributed to 0 A.D. but are missing from the lists, please let us know on <a href=https://wildfiregames.com/forum/index.php?/topic/15542-did-you-contribute-to-0-ad-make-sure-you-get-in-the-credits/ target=_blank>this forum thread</a> and we will make sure you are included in the credits.</p>
+</div>
+</article>
+<article class=blog-entry>
+<header id=page-header class=center-text>
+<h1>Download 0 A.D</h1>
+<picture id=header-stripes>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.png alt="0 A.D. Article Stripes" width=1000 height=8>
+</picture>
+<picture id=header-triangle>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.png alt="0 A.D. Article Triangle" width=62 height=62>
+</picture>
+</header>
+<div class=blog-info>
+<header>
+<p class=blog-date><time datetime=" 2021-08-18" pubdate=pubdate>August 18, 2021</time></p>
+<h2 class=blog-title><a href=https://gloviano.github.io/0ad-www-hugo/download/>Download 0 A.D</a></h2>
+<p class=blog-author>Written By Somebody</p>
+<ul class=blog-categories></ul>
+</header>
+<p class=blog-snippet></p>
+<a class=blog-read href=https://gloviano.github.io/0ad-www-hugo/download/>Read this post</a>
+</div>
+<div id=page-content>
+<p>WIP</p>
+</div>
+</article>
+<article class=blog-entry>
+<header id=page-header class=center-text>
+<h1>Get Support</h1>
+<picture id=header-stripes>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.png alt="0 A.D. Article Stripes" width=1000 height=8>
+</picture>
+<picture id=header-triangle>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.png alt="0 A.D. Article Triangle" width=62 height=62>
+</picture>
+</header>
+<div class=blog-info>
+<header>
+<p class=blog-date><time datetime=" 2021-08-18" pubdate=pubdate>August 18, 2021</time></p>
+<h2 class=blog-title><a href=https://gloviano.github.io/0ad-www-hugo/support/>Get Support</a></h2>
+<p class=blog-author>Written By Somebody</p>
+<ul class=blog-categories></ul>
+</header>
+<p class=blog-snippet></p>
+<a class=blog-read href=https://gloviano.github.io/0ad-www-hugo/support/>Read this post</a>
+</div>
+<div id=page-content>
+<p>As 0 A.D. is still in alpha phase, there are still many problems we need to fix and features we need to implement. Nevertheless, you can find support for 0 A.D. from a variety of sources. Take a look — you’re likely to find an answer to every question.</p>
+<h2 id=frequently-asked-questions>Frequently Asked Questions</h2>
+<p>See the <a href=https://trac.wildfiregames.com/wiki/FAQ title=FAQ target=_blank>FAQ</a> on the wiki.</p>
+<h2 id=web-forums>Web Forums</h2>
+<p><a href=https://wildfiregames.com/forum/register/ target=_blank>Register to our forums</a> and ask the people in our <a href=https://wildfiregames.com/forum/forum/378-bug-reports/ target=_blank>active bug reports forum</a>. You can also <a href="https://wildfiregames.com/forum/index.php?app=core&module=search&search_in=forums" target=_blank>search</a> the complete history of questions and answers.</p>
+<h2 id=live-support-chat>Live Support Chat</h2>
+<p>You can also speak with the 0 A.D. community directly using our internet relay chat (IRC) channel: <a href="https://webchat.quakenet.org/?channels=0ad" target=_blank>#0ad on QuakeNet</a>.</p>
+<h2 id=technical-issue-tracking-system>Technical Issue Tracking System</h2>
+<p>Developers and technically inclined users may use the <a href=https://trac.wildfiregames.com/ target=_blank>Trac system</a> to help us keep tabs on bugs and other issues. <a href=http://trac.wildfiregames.com/newticket target=_blank>New tickets</a> should include all information necessary to reproduce the bug. Thanks.</p>
+<h2 id=known-issues>Known Issues</h2>
+<p>Although we have made a great deal of progress, there are still many things left to implement and fix in 0 A.D. Here is a <a href="http://www.wildfiregames.com/forum/index.php?showtopic=15796" target=_blank>full list here.</a></p>
+<ul>
+<li><strong>Lag</strong> – The game does not run as fast as we would like because of several reasons, mainly pertaining AI and pathfinding. The problem worsens in these conditions: (1) when there are many units on the map, (2) on island maps, and (3) with multiple AI players.</li>
+<li><strong>Visual glitches or textures not loaded</strong> – Sometimes this is a driver problem. Please make sure you have the latest drivers for your graphics card.</li>
+<li><strong>Missing animations</strong> – Some units glide around or don’t drop to the ground when killed. This is a work in progress.</li>
+<li><strong>Sound problems</strong> – We have implemented a new sound system in Alpha 11 and it still has several bugs. We intend to fix them in future alphas.</li>
+<li><strong>Errors and crashes</strong> – Unfortunately, these can happen for many possible reasons, and a closer look is needed to determine the source of the problem. Please follow the instructions on this page to report any errors. Thanks in advance for helping us improve 0 A.D.</li>
+</ul>
+</div>
+</article>
+<article class=blog-entry>
+<header id=page-header class=center-text>
+<h1>Legal Notices</h1>
+<picture id=header-stripes>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.png alt="0 A.D. Article Stripes" width=1000 height=8>
+</picture>
+<picture id=header-triangle>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.png alt="0 A.D. Article Triangle" width=62 height=62>
+</picture>
+</header>
+<div class=blog-info>
+<header>
+<p class=blog-date><time datetime=" 2021-08-18" pubdate=pubdate>August 18, 2021</time></p>
+<h2 class=blog-title><a href=https://gloviano.github.io/0ad-www-hugo/legal-notices/>Legal Notices</a></h2>
+<p class=blog-author>Written By Somebody</p>
+<ul class=blog-categories></ul>
+</header>
+<p class=blog-snippet></p>
+<a class=blog-read href=https://gloviano.github.io/0ad-www-hugo/legal-notices/>Read this post</a>
+</div>
+<div id=page-content>
+<h2 id=disclaimer>Disclaimer</h2>
+<p>Although the authors (hereafter “Wildfire Games”) tried to make sure this website is free from inaccuracies, and relied on sources believed to be reputable, the information in this website is not necessarily complete, accurate or timely in all instances. Similarly, all links to websites are for information purposes only and are not warranted for content, accuracy, or any other purpose. Nothing on this website constitutes, or is meant to constitute, advice of any kind.</p>
+<p>The information in this website is provided for educational and informational purposes only. If you choose to apply ideas contained in this website, or act on any inaccuracies or omissions in it, you are taking full responsibility for your actions, and in no event will Wildfire Games be liable for any such action or its results.</p>
+<h2 id=privacy-statement>Privacy statement</h2>
+<p>Your privacy is important to Wildfire Games. This privacy statement provides information about the personal information that Wildfire Games collects, and the ways in which Wildfire Games uses that personal information.</p>
+<h3 id=personal-information-collection>Personal information collection</h3>
+<p>Wildfire Games may collect and use the following kinds of personal information:</p>
+<ul>
+<li>information that you provide using for the purpose of registering with the website;</li>
+<li>information that you provide for the purpose of subscribing to the website services (including forums and mailing lists); and</li>
+<li>any other information that you send to Wildfire Games.</li>
+</ul>
+<h3 id=using-personal-information>Using personal information</h3>
+<p>Wildfire Games may use your personal information to:</p>
+<p>-administer this website;</p>
+<ul>
+<li>personalize the website for you;</li>
+<li>enable your access to and use of the website services;</li>
+<li>send you informational communications via e-mail.</li>
+</ul>
+<p>In addition to the disclosures reasonably necessary for the purposes identified elsewhere above, Wildfire Games may disclose your personal information to the extent that it is required to do so by law, in connection with any legal proceedings or prospective legal proceedings, and in order to establish, exercise or defend its legal rights.</p>
+<h3 id=securing-your-data>Securing your data</h3>
+<p>Wildfire Games will store all the personal information you provide and take reasonable technical and organisational precautions to prevent the loss, misuse or alteration of your personal information.</p>
+<h3 id=updating-this-statement>Updating this statement</h3>
+<p>Wildfire Games may update this privacy policy by posting a new version on this website. You should check this page occasionally to ensure you are familiar with any changes.</p>
+<h3 id=other-websites>Other websites</h3>
+<p>This website contains links to other websites. Wildfire Games is not responsible for the privacy policies or practices of any third party.</p>
+<h3 id=contact-wildfire-games>Contact Wildfire Games</h3>
+<p>If you have any questions about this privacy policy or Wildfire Games’ treatment of your personal information, please write by email to “webmaster”, followed by the at symbol, then by wildfiregames, and then by dot com.</p>
+<h3 id=about-this-legal-notice>About this legal notice</h3>
+<p>This document is based on a free Contractology template available at <a href=www.freenetlaw.com>www.freenetlaw.com</a>.</p>
+<p>Premium precedents available on the Contractology website include <a href=http://www.contractology.com/precedents/non-disclosure-agreement.html target=_blank>non disclosure terms and conditions templates</a>.</p>
+</div>
+</article>
+<article class=blog-entry>
+<header id=page-header class=center-text>
+<h1>Official Logos</h1>
+<picture id=header-stripes>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.png alt="0 A.D. Article Stripes" width=1000 height=8>
+</picture>
+<picture id=header-triangle>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.png alt="0 A.D. Article Triangle" width=62 height=62>
+</picture>
+</header>
+<div class=blog-info>
+<header>
+<p class=blog-date><time datetime=" 2021-08-18" pubdate=pubdate>August 18, 2021</time></p>
+<h2 class=blog-title><a href=https://gloviano.github.io/0ad-www-hugo/official-logos/>Official Logos</a></h2>
+<p class=blog-author>Written By Somebody</p>
+<ul class=blog-categories></ul>
+</header>
+<p class=blog-snippet></p>
+<a class=blog-read href=https://gloviano.github.io/0ad-www-hugo/official-logos/>Read this post</a>
+</div>
+<div id=page-content>
+<p>You are invited to spread the word about 0 A.D. using the logos below:</p>
+<p><strong>Wildfire Games logo with caption:</strong> Wildfiregames logo, SVG format, in ZIP file.</p>
+<p>“0 A.D.” is set in <a href=https://en.wikipedia.org/wiki/Exocet_%28typeface%29 target=_blank>Exocet</a>; “Wildfire Games” is in Akzidenz-Grotesk Extended BE. Neither of these fonts is available under a free license.</p>
+<p>We like to use <a href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=Gentium_basic" target=_blank>Gentium Basic</a>, available under the <a href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL" target=_blank>SIL Open Font License, 1.1.</a></p>
+<p>Please, use these logos only in order to link to the 0 A.D. or Wildfire Games websites or to describe 0 A.D. or Wildfire Games.</p>
+</div>
+</article>
+<article class=blog-entry>
+<header id=page-header class=center-text>
+<h1>Organization</h1>
+<picture id=header-stripes>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.png alt="0 A.D. Article Stripes" width=1000 height=8>
+</picture>
+<picture id=header-triangle>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.png alt="0 A.D. Article Triangle" width=62 height=62>
+</picture>
+</header>
+<div class=blog-info>
+<header>
+<p class=blog-date><time datetime=" 2021-08-18" pubdate=pubdate>August 18, 2021</time></p>
+<h2 class=blog-title><a href=https://gloviano.github.io/0ad-www-hugo/organization/>Organization</a></h2>
+<p class=blog-author>Written By Somebody</p>
+<ul class=blog-categories></ul>
+</header>
+<p class=blog-snippet></p>
+<a class=blog-read href=https://gloviano.github.io/0ad-www-hugo/organization/>Read this post</a>
+</div>
+<div id=page-content>
+<h2 id=project-leader>Project Leader</h2>
+<ul>
+<li>Nicolas Auvray (Itms)</li>
+</ul>
+<h2 id=administrative-leader>Administrative Leader</h2>
+<ul>
+<li>Erik Johansson (feneur)</li>
+</ul>
+<h2 id=department-heads>Department Heads</h2>
+<ul>
+<li>Johnathan Good (LordGood) – Art</li>
+<li>Omri Lahav (OmriLahav) – Music</li>
+</ul>
+<h2 id=treasury-committee>Treasury Committee</h2>
+<ul>
+<li>Erik Johansson (feneur)</li>
+<li>Aviv Sharon (Jeru)</li>
+</ul>
+<h2 id=project-liaison-to-software-in-the-public-interest-inc>Project Liaison to Software in the Public Interest, Inc.</h2>
+<ul>
+<li>Aviv Sharon (Jeru)</li>
+</ul>
+<p>Last Updated On: 2021-08-19</p>
+</div>
+</article>
+<article class=blog-entry>
+<header id=page-header class=center-text>
+<h1>Participate</h1>
+<picture id=header-stripes>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.png alt="0 A.D. Article Stripes" width=1000 height=8>
+</picture>
+<picture id=header-triangle>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.png alt="0 A.D. Article Triangle" width=62 height=62>
+</picture>
+</header>
+<div class=blog-info>
+<header>
+<p class=blog-date><time datetime=" 2021-08-18" pubdate=pubdate>August 18, 2021</time></p>
+<h2 class=blog-title><a href=https://gloviano.github.io/0ad-www-hugo/participate/>Participate</a></h2>
+<p class=blog-author>Written By Somebody</p>
+<ul class=blog-categories></ul>
+</header>
+<p class=blog-snippet></p>
+<a class=blog-read href=https://gloviano.github.io/0ad-www-hugo/participate/>Read this post</a>
+</div>
+<div id=page-content>
+<p>Everyone is invited to join and contribute to 0 A.D. on a completely voluntary basis, to gain game development experience, to comply with a school project or just for fun.</p>
+<p>If you are a programmer, please jump right in and just start offering patches according to the instructions below, and with time we will contact prominent contributors and put them officially on the team. Artists and other contributors can do the same, or just ask to be interviewed and get a volunteer gig in 3d modeling, animating, sound, music etc.</p>
+<h2 id=for-programmers>For Programmers</h2>
+<p>0 A.D’s game engine is called <strong>Pyrogenesis</strong> and it is specifically designed for flexibility and ease of modification. The engine is in C++, and gameplay scripting is in JavaScript. Game logic, artwork, and data can easily be changed through data files. The engine itself is modular in design to provide maximal flexibility while still remaining efficient. Anyone can download, build and run the latest version of the game.</p>
+<p>If you’re a programmer and you want to contribute to 0 A.D., just <a href=http://trac.wildfiregames.com/wiki/GettingStartedProgrammers target=_blank>get your feet wet and get started</a>. We don’t want to hinder your progress with any applications. If you do a good job over time, you’ll get inducted to the team anyway.</p>
+<p>We use <a href=http://trac.wildfiregames.com/wiki/TortoiseSVN_Guide target=_blank>Subversion</a> for revision control, and <a href=http://trac.wildfiregames.com/ target=_blank>Trac</a> for documentation and issue-tracking. Our technical discussions are conducted on <a href="http://www.wildfiregames.com/forum/index.php?showforum=312" target=_blank>the forums</a> and over IRC (<a href="http://webchat.quakenet.org/?channels=0ad-dev" target=_blank>#0ad-dev on QuakeNet</a>). You could create a patch and submit it to us, and we’ll then review it and maybe suggest some changes or commit it to SVN. Contributors who make consistent contributions to the codebase are offered permissions to commit directly to SVN.</p>
+<h2 id=for-artists>For Artists</h2>
+<p>Like the codebase, 0 A.D’s art is also “open source”. The models and animations can be created in the software of your choice, as long as it capable of exporting <strong>COLLADA</strong> files (.DAE). Similarly, the 2D textures are exported though the paint software of your choice to a <strong>Direct Draw Surface</strong> (.DDS) file. The alpha channel of the texture is used to define player color, object color, or transparency.</p>
+<p>The art assets are organized in <strong>XML files</strong> called <strong>‘actors’</strong>, which define entities in the game. An actor declares callouts for models, textures, and animations, if applicable. Since you can specify alternate textures and props to an entity, you can use the 0 A.D. art model to allow for randomness in the art. That way, several instances of the same Celtic warrior could appear in battle with variant hair colors, and two adjacent instances of the same Greek house could have pots and carpets aligned differently, so they’ll seldom look exactly alike.</p>
+<p>Templates to help you make art assets (like textures and meshes) are readily available. Also, various tutorials and guides will allow you to hit the ground running. More information about the nuts and bolts of creating art assets for 0 A.D. can be found <a href=http://trac.wildfiregames.com/wiki/ArtDesignDocument target=_blank>here</a>. Check out our open <a href="http://www.wildfiregames.com/forum/index.php?showforum=409" target=_blank>art development forum</a>, and feel free to participate!</p>
+<h2 id=for-translators>For Translators</h2>
+<p>We are currently using Transifex to translate the game texts. To start translating the game, ​<a href=https://www.transifex.com/signup/ target=_blank>create an account in Transifex</a> and ask to join a translation team (or create a new one) at ​https://www.<a href=https://www.transifex.com/projects/p/0ad/ target=_blank>transifex.com/projects/p/0ad/</a>.</p>
+<p>You can find more information on <a href=https://trac.wildfiregames.com/wiki/Localization target=_blank>this wiki page</a>.</p>
+<h2 id=for-everyone>For Everyone</h2>
+<ul>
+<li>Subscribe to us on <a href=http://feeds.feedburner.com/0AdNews target=_blank>RSS</a>, <a href=http://www.moddb.com/games/0-ad target=_blank>ModDB</a>, <a href=http://www.facebook.com/pages/0-AD/300383354858 target=_blank>Facebook</a>, <a href=http://twitter.com/play0ad/ target=_blank>Twitter</a> or <a href=https://plus.google.com/105243244628275530704/posts target=_blank>Google+</a> to get updates as development goes on.</li>
+<li>Spread the word over social media, blogs and everywhere! Be sure to mention that we are always looking for new contributors.</li>
+<li>Create your own fan videos and screenshots and upload them over your favorite social media platforms! (Remember: 0 A.D.’s license, CC-BY-SA, requires you redistribute derivative works like fan videos and screenshots under a similar free license.)</li>
+</ul>
+</div>
+</article>
+<article class=blog-entry>
+<header id=page-header class=center-text>
+<h1>The Story of 0 A.D.</h1>
+<picture id=header-stripes>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-stripes.png alt="0 A.D. Article Stripes" width=1000 height=8>
+</picture>
+<picture id=header-triangle>
+<source type=image/webp srcset=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.webp>
+<img src=https://gloviano.github.io/0ad-www-hugo/images/header-triangle.png alt="0 A.D. Article Triangle" width=62 height=62>
+</picture>
+</header>
+<div class=blog-info>
+<header>
+<p class=blog-date><time datetime=" 2021-08-18" pubdate=pubdate>August 18, 2021</time></p>
+<h2 class=blog-title><a href=https://gloviano.github.io/0ad-www-hugo/the-story-of-0ad/>The Story of 0 A.D.</a></h2>
+<p class=blog-author>Written By Somebody</p>
+<ul class=blog-categories></ul>
+</header>
+<p class=blog-snippet></p>
+<a class=blog-read href=https://gloviano.github.io/0ad-www-hugo/the-story-of-0ad/>Read this post</a>
+</div>
+<div id=page-content>
+<p>A lot of people are surprised to hear that 0 A.D. has been in development since 2001 (or 2003, depending on how you count). What follows is a short history of the project, explaining how it came about and developed into what it is today.</p>
+<h2 id=2000-2002-the-birth-of-0-ad>2000-2002: The Birth of 0 A.D.</h2>
+<p>The concept behind 0 A.D. has actually been in the works since the year 2000. It started out as a collaboration between several groups advocating several different ideas.</p>
+<p>The first idea was a fan request put together by a gamers’ group called Tonto Clan. They compiled a game design for a remake of Age of Empires: The Rise of Rome, and intended to send it to Age of Empires developers Ensemble Studios and suggest that they implement it. This fell through because ES had a different concept in mind, which was to develop a game based on mythology rather than history. This game is now known as Age of Mythology.</p>
+<p>Second, Wildfire Games’ predecessor, a modding team named Wildfire Studios, had completed a successful, large-scale mod for Age of Empires II: The Age of Kings (AoK) named “Rome at War”. Seeking to expand their success, they had started developing another mod at a much larger scale, changing many more art assets — a “total conversion” mod. While developing the mod, the team constantly ran into the limitations of modding a closed-source, proprietary game, and found that they could not change some features of the AoK engine, leading them to look into developing a standalone game.</p>
+<p>Last but not least, a fantasy modding project, later called The Last Alliance (TLA), began looking into creating their own mod, and was also interested in the prospect of creating a standalone game with its own engine.</p>
+<p>While at first, these three groups interacted independently on the forums of Age of Kings Heaven, an AoK fansite, they unified their ideas into the concept of a freeware, independent game engine to support 0 A.D. and TLA in the winter of 2001/2002. Jason “Wijitmaker” Bishop, a 23-year-old from Edwall, Washington, took the lead and would continue to manage the project for the next 6 years or so.</p>
+<h2 id=2003-2009-closed-source-development>2003-2009: Closed-Source Development</h2>
+<p>After months of collaborative research and game design, a unified game design document was finalized in the summer of 2003. The chief game designers for 0 A.D. were Bishop along with Ken “TheRealDeal” Wood, a retiree in his 60’s from Arizona, and Stuart “Acumen” Walpole, a programmer in his 20’s from the UK.</p>
+<p>Development continued until 2009 as a closed-source, proprietary freeware initiative, meaning it was supposed to be offered at no charge, and it was always meant to be easily moddable, yet the source code was closed for team members only. To join the the team, all one had to do was file an application and pass an interview, though.</p>
+<p>Throughout 2003 to 2009, the game developed at a varying pace, mostly in the art area, with a large number of units and textures designed from scratch, mostly for the Celtic and Hellenic factions. Progress on the programming side was achieved on issues like gameplay logic, random map generation, water rendering, and multiplayer networking. Two topics in the programming side served programmers as projects for undergraduate degrees in Computer Science: The water rendering by Matei Zaharia and the file ordering and caching system by Jan “janwas” Wassenberg. (Both would go on to graduate school in computer science.) Art development kept going strong under the sustained leadership of Michael D. Hafer (“Mythos_Ruler”), a contributor in his late 20’s from Indiana.</p>
+<p>Wood sadly passed away in 2006 after a long fight with cancer. Bishop stepped down as project lead in 2008 due to family obligations, with Erik “feneur” Johansson succeeding him.</p>
+<p>Although contributions to 0 A.D. continued more or less steadily over these years, interest in TLA waned over time. As of September 2012, development of The Last Alliance has been officially discontinued. All the existing contributions to that project have been archived as study and discussion of Tolkien’s works, and as inspiration for those interested in fantasy mods and games.</p>
+<p>Over time, programmers for 0 A.D. were becoming hard to find as well, stalling development of the game. Over 2009, the team re-evaluated the development system, and looked seriously into an open source model. Finally they went for it.</p>
+<h2 id=july-2009-the-open-source-release>July 2009: The Open Source Release</h2>
+<p>In July 2009, the project switched from a closed development process to open source, making the code available as GPL and the art content available as CC-BY-SA, and encouraging external contributions. The team wished to attract new talent to 0 A.D., share some ideas, tools and code with the game development community, and simplify a number of issues with distribution and debugging.</p>
+<p>Shortly afterwards, Philip (“Ykkrosh”) Taylor, a PhD student from Cambridge, made large changes to the codebase sorely requiring redesign and reimplementation, making it easier for new contributors to join.</p>
+<p>Ever since going OS, we haven’t looked back. The game has attracted many contributors in all fields of development and we have picked up the pace considerably. Shortly after the OS release, we began releasing pre-alpha and alpha versions of 0 A.D. every two to three months, each with new features, and drawing the project closer to finish step by step.</p>
+<h2 id=the-story-continues>The Story Continues</h2>
+<p>In the ends of 2016, Johansson passed on the torch of project leader to Nicolas (“Itms”) Auvray, a Physics student from France in his early 20’s. Johansson continues to be the Adminitrative Head of Wildfire Games, thus continuing a sustained involvement of more than ten years in the project.</p>
+<p>We are over 15 years in development and still not done, but we have come a long way and we are going ever stronger. Missing features are less and less numerous, and the community of players and contributors is thriving. The time and effort we have put in is comparable to what goes into developing a regular AAA title, and those can take up to 7 years to create, even with a greater and steadier input of work. So really, we’re glad that we’ve accomplished so much and that we’re still around after so many years.</p>
+<p>We’ll keep this page posted as development progresses, but in the meantime, you’re invited to become a part of the story of 0 A.D. Join us and get involved!</p>
+</div>
+</article>
+</main><button id=to-top title="Go To Top">&#10548;</button>
+<nav id=footer-nav>
+<div>
+<div>
+<h3>Donate To 0 A.D.</h3>
+<p>Donate Stuff</p>
+</div>
+<div>
+<h3>Game Info</h3>
+<ul>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/project-overview/>Project Overview</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/download/>Download 0 A.D.</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/features/>Features</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/factions/>Factions</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/game-manual/>Game Manual</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Awards & Acclaim</a>
+</li>
+</ul>
+</div>
+<div>
+<h3>Media</h3>
+<ul>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Videos</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Screenshots</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Music</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Building Concepts</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Unit Concepts</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Wallpapers</a>
+</li>
+</ul>
+</div>
+<div>
+<h3>Community</h3>
+<ul>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Donate</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/participate/>Participate</a>
+</li>
+<li>
+<a href=https://wildfiregames.com/forum/ target=_blank>Forums</a>
+</li>
+<li>
+<a href="http://webchat.quakenet.org/?channels=0ad" target=_blank>IRC Channel</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/support/>Get Support</a>
+</li>
+</ul>
+</div>
+<div>
+<h3>About</h3>
+<ul>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contact-us/>Contact Us</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/organization/>Organization</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/contributors/>Contributors</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/legal-notices/>Legal Notices</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/official-logos/>Official Logos</a>
+</li>
+<li>
+<a href=https://gloviano.github.io/0ad-www-hugo/the-story-of-0ad/>The Story of 0 A.D.</a>
+</li>
+</ul>
+</div>
+<div>
+<h3>Follow Us</h3>
+<ul>
+<li>
+<a href=http://play0ad.bandcamp.com/ target=_blank>BandCamp</a>
+</li>
+<li>
+<a href=http://facebook.com/play0ad target=_blank>Facebook</a>
+</li>
+<li>
+<a href=https://www.instagram.com/play0ad.official/ target=_blank>Instagram</a>
+</li>
+<li>
+<a href=https://www.linkedin.com/company/345131/ target=_blank>LinkedIn</a>
+</li>
+<li>
+<a href=https://mastodon.social/@play0ad target=_blank>Mastodon</a>
+</li>
+<li>
+<a href=http://www.moddb.com/games/0-ad target=_blank>ModDB</a>
+</li>
+<li>
+<a href=https://www.reddit.com/r/0ad/ target=_blank>Reddit</a>
+</li>
+<li>
+<a href=https://twitter.com/play0ad target=_blank>Twitter</a>
+</li>
+<li>
+<a href=https://www.youtube.com/play0ad target=_blank>YouTube</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<footer>
+<ul>
+<li>
+<a href=http://wildfiregames.com/>Wildfire Games</a>
+</li>
+<li>
+<a href=http://creativecommons.org/licenses/by-sa/3.0/>this website content is released under CC-BY-SA</a>
+</li>
+</ul>
+</footer>
+<script src=https://gloviano.github.io/0ad-www-hugo/js/0ad.min.js></script>
+</body>
+</html>
