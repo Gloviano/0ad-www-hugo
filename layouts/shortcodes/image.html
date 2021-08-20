@@ -1,1 +1,6 @@
-<img src="{{ .Page.Permalink }}{{ .Get "src" }}" alt="{{ .Get "alt" }}" width="{{ .Get "width" }}" height="{{ .Get "height" }}">
+<!--
+    Shortcode to generate an image link within markdown
+    src, alt, width, and height are all required to maintain valid W3C markup.
+-->
+
+<img src="{{ .Page.Permalink }}{{ .Get "src" }}" alt="{{ .Get "alt" }}" loading="lazy" width="{{ .Get "width" }}px" height="{{ .Get "height" }}px" class="image-resize">

@@ -84,6 +84,11 @@ mark {
 
 .center { text-align: center; }
 
+.image-resize {
+    width: 100%;
+    height: auto;
+}
+
 /* Header CSS */
 
 #top-bar {

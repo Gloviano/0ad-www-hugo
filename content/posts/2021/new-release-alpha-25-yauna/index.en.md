@@ -8,7 +8,7 @@ categories = ["News"]
 draft = false
 +++
 
-{{<image src="0ad-new-release-alpha-25-yauna.jpg" alt="New Release: 0 A.D. Alpha 25: Yaunā" width="100%" height="auto">}}
+{{<image src="0ad-new-release-alpha-25-yauna.jpg" alt="New Release: 0 A.D. Alpha 25: Yaunā" width="960" height="540">}}
 
 Wildfire Games proudly announces the release of 0AD Alpha 25: “Yaunā,” the twenty-fifth alpha version of 0 A.D., a free, open-source real-time strategy game of ancient warfare. Yaunā is an old Persian word for Ionians (Greeks).
 
@@ -41,6 +41,6 @@ Although you might find some people selling copies of 0 A.D., either over the in
 
 ADD DOWNLOAD WIDGET HERE
 
-{{<image src="0ad-landscape.jpg" alt="0 A.D. Alpha 25: Yaunā - Landscape" width="100%" height="auto">}}
-{{<image src="0ad-farm-and-harbour.jpg" alt="0 A.D. Alpha 25: Yaunā - Farm and Harbour" width="100%" height="auto">}}
-{{<image src="0ad-nightscene.jpg" alt="0 A.D. Alpha 25: Yaunā - Nightscene" width="100%" height="auto">}}
+{{<image src="0ad-landscape.jpg" alt="0 A.D. Alpha 25: Yaunā - Landscape" width="960" height="auto">}}
+{{<image src="0ad-farm-and-harbour.jpg" alt="0 A.D. Alpha 25: Yaunā - Farm and Harbour" width="960" height="auto">}}
+{{<image src="0ad-nightscene.jpg" alt="0 A.D. Alpha 25: Yaunā - Nightscene" width="960" height="auto">}}
