@@ -4,9 +4,16 @@ defaultContentLanguage = "en"
 assetDir = "static"
 paginate = 5
 enableRobotsTXT = false
-enableMissingTranslationPlaceholders = false
+
 disableHugoGeneratorInject = true
 disableLiveReload = false
+
+# Useful when translating.
+enableMissingTranslationPlaceholders = true
+
+# Will give values to .Lastmod etc.
+enableGitInfo = true
+
 
 [params]
     description = "0 A.D. is a free, open-source, historical Real Time Strategy (RTS) game currently under development by Wildfire Games, a global group of volunteer game developers."
