@@ -1,5 +1,3 @@
-const test = "Hello";
-
 // Return To Top Of Page Functionality
 const toTopButton = document.getElementById("to-top");
 window.onscroll = () => {
