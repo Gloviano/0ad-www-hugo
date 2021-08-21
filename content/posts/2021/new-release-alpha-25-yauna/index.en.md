@@ -41,6 +41,6 @@ Although you might find some people selling copies of 0 A.D., either over the in
 
 ADD DOWNLOAD WIDGET HERE
 
-{{<image src="0ad-landscape.jpg" alt="0 A.D. Alpha 25: Yaunā - Landscape" width="960" height="auto">}}
-{{<image src="0ad-farm-and-harbour.jpg" alt="0 A.D. Alpha 25: Yaunā - Farm and Harbour" width="960" height="auto">}}
-{{<image src="0ad-nightscene.jpg" alt="0 A.D. Alpha 25: Yaunā - Nightscene" width="960" height="auto">}}
+{{<image src="0ad-landscape.jpg" alt="0 A.D. Alpha 25: Yaunā - Landscape" width="960" height="518">}}
+{{<image src="0ad-farm-and-harbour.jpg" alt="0 A.D. Alpha 25: Yaunā - Farm and Harbour" width="960" height="540">}}
+{{<image src="0ad-nightscene.jpg" alt="0 A.D. Alpha 25: Yaunā - Nightscene" width="960" height="540">}}
