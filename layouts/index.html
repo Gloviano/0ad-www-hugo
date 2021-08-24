@@ -1,7 +1,8 @@
 {{ define "main" }}
 
-<!-- We loop through all English language posts and merge them with the current language to fill in any missing gaps. -->
+<!-- We loop through all English language posts and merge them with the current language to fill in any missing translations. -->
 {{- $pages := where $.Site.RegularPages "Section" "posts" | lang.Merge (where .Sites.First.RegularPages "Section" "posts") -}}
+
 {{- range $pages -}}
 <article class="blog-entry">
     <header class="page-header">
