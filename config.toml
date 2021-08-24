@@ -5,7 +5,7 @@ assetDir = "static"
 paginate = 5
 enableRobotsTXT = false
 
-disableHugoGeneratorInject = true
+disableHugoGeneratorInject = false
 disableLiveReload = false
 
 # Useful when translating.

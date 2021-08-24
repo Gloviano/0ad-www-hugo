@@ -1,10 +1,10 @@
 {{ define "main" }}
 
 <!-- We loop through all English language posts and merge them with the current language to fill in any missing gaps. -->
-{{ $pages := where $.Site.RegularPages "Section" "posts" | lang.Merge (where .Sites.First.RegularPages "Section" "posts") }}
-{{ range $pages }}
+{{- $pages := where $.Site.RegularPages "Section" "posts" | lang.Merge (where .Sites.First.RegularPages "Section" "posts") -}}
+{{- range $pages -}}
 <article class="blog-entry">
-    <header class="page-header center-text">
+    <header class="page-header">
         <h1><a href="{{ .RelPermalink | absLangURL }}">{{ .Title }}</a></h1>
         <picture class="header-stripes">
             <source type="image/webp" srcset="{{ .Site.BaseURL }}images/header-stripes.webp">
@@ -20,8 +20,9 @@
             }}{{ . }}{{ end }}</p>
     </header>
     <div class="page-content">
-        {{ .Content }}
+        {{- .Content -}}
     </div>
 </article>
 {{ end }}
-{{ end }}
+
+{{- end -}}

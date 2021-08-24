@@ -1,0 +1,23 @@
+{
+    
+    "phases": {
+
+        "town": {
+            "upgrade_costs": {
+                "food": 500,
+                "wood": 500,
+                "stone": 0,
+                "metal": 0
+            }
+        },
+        "city": {
+            "upgrade_costs": {
+                "food": 0,
+                "wood": 0,
+                "stone": 1000,
+                "metal": 1000
+            }
+        }
+    }
+
+}

@@ -1,7 +1,7 @@
 {{ define "main" }}
     {{ range .Pages }}
     <article class="blog-entry">
-        <header class="page-header center-text">
+        <header class="page-header">
             <h1>{{ .Title }}</h1>
             <picture class="header-stripes">
                 <source type="image/webp" srcset="{{ .Site.BaseURL }}images/header-stripes.webp">

@@ -1,0 +1,38 @@
+{{ define "main" }}
+
+<article>
+    <header class="page-header center">
+        <h1>{{ .Title }}</h1>
+        <picture class="header-stripes">
+            <source type="image/webp" srcset="{{ .Site.BaseURL }}images/header-stripes.webp">
+            <img src="{{ .Site.BaseURL }}images/header-stripes.png" alt="0 A.D. Article Stripes" width="1000"
+                height="8">
+        </picture>
+        <picture class="header-triangle">
+            <source type="image/webp" srcset="{{ .Site.BaseURL }}images/header-triangle.webp">
+            <img src="{{ .Site.BaseURL }}images/header-triangle.png" alt="0 A.D. Article Triangle" width="62"
+                height="62">
+        </picture>
+    </header>
+    <div class="page-content gallery-page">
+        {{ with .Resources.ByType "image" }}
+        {{ range . }}
+        <!-- Resize gallery image for our thumbnail -->
+        {{ $image := .Resize "400x" }}
+        <!-- Rename generated image thumbnail, e.g /screenshots/images/thumbnail-image.jpg -->
+        {{ $image := slice $image | resources.Concat (print (path.Dir .RelPermalink) "/thumbnail-" (path.Base .)) }}
+        <figure class="gallery-figure">        
+            <a href="{{ .RelPermalink }}">
+                <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}" loading="lazy" width="{{ $image.Width }}" height="{{ $image.Height }}">
+            </a>
+            <figcaption>{{ .Title }}</figcaption>
+        </figure>
+        {{ end }}
+        {{ end }}
+    </div>
+    <div id="lightbox">
+        <div id="lightbox-content"></div>
+    </div>
+</article>
+
+{{ end }}

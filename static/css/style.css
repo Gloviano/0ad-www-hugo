@@ -286,6 +286,53 @@ article li { margin-top: 20px; }
     box-shadow: inset 0px 4px 3px -3px rgba(50, 50, 50, 0.75);
 }
 
+/* Gallery CSS */
+#lightbox {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+#lightbox-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+#lightbox-content img {
+    width: 100%;
+}
+
+.gallery-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.gallery-figure {
+    width: fit-content;
+    margin: 0 0 20px 0;
+    padding: 0;
+    background-color: white;
+}
+
+.gallery-figure img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-figure figcaption {
+    padding-bottom: 5px;
+    text-align: center;
+}
+
 /* Footer CSS */
 footer {
     min-height: 30px;
