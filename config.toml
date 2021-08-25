@@ -1,4 +1,4 @@
-baseURL = "https://gloviano.github.io/0ad-www-hugo/"
+baseURL = "https://0ad-www-hugo.pages.dev/"
 languageCode = "en"
 defaultContentLanguage = "en"
 assetDir = "static"
