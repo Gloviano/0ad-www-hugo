@@ -6,6 +6,7 @@ slug: "screenshots"
 aliases: ["/media/screenshots"]
 layout: screenshots
 description: "0 A.D. Screenshot Gallery"
+script: "/js/gallery.js"
 draft: false
 
 resources:
