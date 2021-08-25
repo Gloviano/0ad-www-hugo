@@ -1,8 +1,8 @@
 <!-- Main JS files -->
 {{- if not .Site.IsServer -}}
-{{ $script := resources.Get "js/0ad.js" | minify}}
+{{ $script := resources.Get "js/0ad.js" | minify | fingerprint }}
 <script src="{{ $script.Permalink }}"></script>
-{{ with .Params.script }}{{ $path := $.Param "script" }}{{ $script := resources.Get $path }}{{ $min := $script | resources.Minify }}
+{{ with .Params.script }}{{ $path := $.Param "script" }}{{ $script := resources.Get $path }}{{ $min := $script | resources.Minify | resources.Fingerprint }}
 <script src="{{ $min.Permalink }}"></script>
 {{ end }}
 {{ else }}
