@@ -1,1 +1,2 @@
-/wp-content/gallery/screenshots/ /screenshots/images/ 301
+/wp-content/gallery/screenshots/* /screenshots/images/* 301
+/wp-content/gallery/screenshots/BabylonParadise.jpg /screenshots/images/BabylonParadise.jpg 301
